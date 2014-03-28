@@ -1,0 +1,168 @@
+/**
+ * Project: Petulant-Octo-Tyrion
+ * User: Hector Ordonez
+ * Description:
+ * Date: 28/03/14 19:00
+ */
+
+/** Media Queries **/
+
+/** Smart phones in screen layout **/
+@media screen and (max-width: 479px) {
+    .col1of2 {
+        width: 100%;
+    }
+
+    .col2of2 {
+        width: 100%;
+    }
+
+    .col1of3 {
+        width: 100%;
+    }
+
+    .col2of3 {
+        width: 100%;
+    }
+    
+    .col3of3 {
+        width: 100%;
+    }
+    
+    .col1of4 {
+        width: 100%;
+    }
+    
+    .col2of4 {
+        width: 100%;
+    }
+    
+    .col3of4 {
+        width: 100%;
+    }
+    
+    .col4of4 {
+        width: 100%;
+    }
+}
+
+/** iPads and smart phones in landscape layouts **/
+@media screen and (min-width: 480px) and (max-width: 720px) {
+    .col1of2 {
+        width: 50%;
+    }
+
+    .col2of2 {
+        width: 100%;
+    }
+
+    .col1of3 {
+        width: 100%;
+    }
+
+    .col2of3 {
+        width: 100%;
+    }
+
+    .col3of3 {
+        width: 100%;
+    }
+
+    .col1of4 {
+        width: 100%;
+    }
+
+    .col2of4 {
+        width: 50%;
+    }
+
+    .col3of4 {
+        width: 100%;
+    }
+
+    .col4of4 {
+        width: 100%;
+    }
+}
+
+/** Regular screens **/
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+    .col1of2 {
+        width: 50%;
+    }
+
+    .col2of2 {
+        width: 100%;
+    }
+
+    .col1of3 {
+        width: 33%;
+    }
+
+    .col2of3 {
+        width: 66%;
+    }
+
+    .col3of3 {
+        width: 100%;
+    }
+
+    .col1of4 {
+        width: 25%;
+    }
+
+    .col2of4 {
+        width: 50%;
+    }
+
+    .col3of4 {
+        width: 75%;
+    }
+
+    .col4of4 {
+        width: 100%;
+    }
+}
+
+/** Large screens **/
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+
+    .col1of2 {
+        width: 50%;
+    }
+
+    .col2of2 {
+        width: 100%;
+    }
+
+    .col1of3 {
+        width: 33%;
+    }
+
+    .col2of3 {
+        width: 66%;
+    }
+
+    .col3of3 {
+        width: 100%;
+    }
+
+    .col1of4 {
+        width: 25%;
+    }
+
+    .col2of4 {
+        width: 50%;
+    }
+
+    .col3of4 {
+        width: 75%;
+    }
+
+    .col4of4 {
+        width: 100%;
+    }
+}
