@@ -9,6 +9,10 @@
 
 /** Smart phones in screen layout **/
 @media screen and (max-width: 479px) {
+    body {
+        font-size: 90%;
+    }
+    
     .col1of2 {
         width: 100%;
     }
@@ -51,7 +55,11 @@
 }
 
 /** iPads and smart phones in landscape layouts **/
-@media screen and (min-width: 480px) and (max-width: 720px) {    
+@media screen and (min-width: 480px) and (max-width: 720px) {
+    body {
+        font-size: 100%;
+    }
+    
     .col1of2 {
         width: 50%;
     }
@@ -94,7 +102,11 @@
 }
 
 /** Regular screens **/
-@media screen and (min-width: 721px) and (max-width: 1024px) {    
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+    body {
+        font-size: 110%;
+    }
+    
     .col1of2 {
         width: 50%;
     }
@@ -138,6 +150,13 @@
 
 /** Large screens **/
 @media screen and (min-width: 1024px) {
+    body {
+        font-size: 120%;
+    }
+    .wrap {
+        max-width: 770px;
+    }
+    
     .col1of2 {
         width: 50%;
     }
