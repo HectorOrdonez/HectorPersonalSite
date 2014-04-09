@@ -25,7 +25,7 @@ nav {
 /** Header **/
 header#mainHeader {
     position: relative;
-    min-height: 100%;
+    min-height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
     width: 100%;
     background-image: url('./../images/header.png');
     background-size: cover;
@@ -44,9 +44,8 @@ article#articleThePerson {
     position: relative;
     min-height: 75%;
     width: 100%;
-    background-image: url('./../images/thePerson.png');
+    background: url('./../images/thePerson.png') fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 /** The Skills **/
@@ -112,16 +111,41 @@ nav ul a {
 /** HEADER                                                                               **/
 /******************************************************************************************/
 
+/*********************************************************/
+/** Header wrap centers vertically the text block.      **/
+/** This text block has the following height:           **/
+/** Top and bottom padding: 0.5em + 0.5em x2 (2 blocks) **/
+/** Top and bottom margin: 0.5em + 0.5em x2 (2 blocks)  **/
+/** Line height h1: base h1 * line height: 2em x 3em    **/
+/** Line height h2: base h2 * line height: 1.5em x 3em  **/
+/** Total: 2 + 2 + 6 + 4.5 = 14.5em                     **/
+/** Which is the height. For the vertical positioning,  **/
+/** The half of it has to be set as margin-top.         **/
+/*********************************************************/
+
 #mainHeader #header-wrap {
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-top: -5em;
-    margin-left: -45%;
-    width: 90%;
-    height: 5em;
+    margin-top: -7.25em;
+    margin-left: auto;
+    width: 100%;
+    height: 14.5em;
     text-align: center;
     line-height: 3em;
+}
+
+#mainHeader #header-wrap h1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .5em;
+    margin: .5em;
+    display: inline-block;
+}
+
+#mainHeader #header-wrap h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .5em;
+    margin: .5em;
+    display: inline-block;
 }
 
 /******************************************************************************************/
@@ -173,6 +197,15 @@ nav ul a {
 /******************************************************************************************/
 /** FONT STYLES                                                                          **/
 /******************************************************************************************/
+
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
 
 .ftype_title {
     font-family: FontAwesome sans-serif;
