@@ -77,6 +77,9 @@ footer#mainFooter {
 /******************************************************************************************/
 /** NAV                                                                                  **/
 /******************************************************************************************/
+nav {
+    line-height: 3em;
+}
 
 nav button {
     float: right;
@@ -86,6 +89,23 @@ nav button {
     background-size: contain;
     cursor: pointer;
     border: 0;
+}
+nav > a {
+    height: 100%;
+    padding: 0 1em;
+    float: left;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    margin: 0 0.5em;
+    display: inline-block;
+}
+
+nav ul a {
+    font-size: 90%;
+    padding: 0.5em;
 }
 
 /******************************************************************************************/
@@ -153,3 +173,22 @@ nav button {
 /******************************************************************************************/
 /** FONT STYLES                                                                          **/
 /******************************************************************************************/
+
+.ftype_title {
+    font-family: FontAwesome sans-serif;
+    color: #000;
+    transition: background 1s;
+}
+.ftype_title:hover {
+    background-color: rgba(40, 40, 40, 0.6);
+}
+
+
+.ftype_link1 {
+    font-family: FontAwesome sans-serif;
+    color: #000;
+    transition: background 1s;
+}
+.ftype_link1:hover {
+    background-color: rgba(40, 40, 40, 0.6);
+}
