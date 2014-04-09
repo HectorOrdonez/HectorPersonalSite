@@ -51,7 +51,6 @@ article#articleThePerson {
 /** The Skills **/
 article#articleTheSkills {
     position: relative;
-    min-height: 100%;
     width: 100%;
     background-color: #FFF;
 }
@@ -149,15 +148,57 @@ nav ul a {
 }
 
 /******************************************************************************************/
-/** THE WORKS                                                                            **/
+/** THE SKILLS                                                                           **/
 /******************************************************************************************/
+article#articleTheSkills {
+    max-width: 50em;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 3em;
+}
+
+article#articleTheSkills header {
+    line-height: 3em;
+    text-align: center;
+}
+
+/*********************************************************/
+/** Each knowledge is set to cover the half of its      **/
+/** column.                                             **/
+/** Each column's height is 
+/*********************************************************/
+
+article#articleTheSkills .knowledge {
+    position: relative;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    background: no-repeat center;
+    background-size: contain;
+    padding-bottom: 50%;
+    cursor: pointer;
+}
+
+article#articleTheSkills #masterOfPHP {
+    background-image: url('./../images/masterOfPHP.png');
+}
+article#articleTheSkills #masterOfJS{
+    background-image: url('./../images/masterOfJS.png');
+}
+article#articleTheSkills #masterOfCSS {
+    background-image: url('./../images/masterOfCSS.png');   
+}
+article#articleTheSkills #masterOfMySQL {
+    background-image: url('./../images/masterOfMySQL.png');
+}
 
 /******************************************************************************************/
 /** THE PERSON                                                                           **/
 /******************************************************************************************/
 
 /******************************************************************************************/
-/** THE SKILLS                                                                           **/
+/** THE WORKS                                                                            **/
 /******************************************************************************************/
 
 /******************************************************************************************/
@@ -222,6 +263,7 @@ h2 {
     color: #000;
     transition: background 1s;
 }
+
 .ftype_link1:hover {
     background-color: rgba(40, 40, 40, 0.6);
 }
