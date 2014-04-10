@@ -65,7 +65,6 @@ article#articleTheDifference {
 /** Contact me! **/
 footer#mainFooter {
     position: relative;
-    height: 3em;
     width: 100%;
     background-color: #444;
 }
@@ -365,6 +364,33 @@ article#articleTheDifference #differenceContent2, article#articleTheDifference #
 /******************************************************************************************/
 /** CONTACT ME                                                                           **/
 /******************************************************************************************/
+footer#mainFooter {
+    padding: 3em;
+    overflow: hidden;
+}
+
+footer#mainFooter form > label, footer#mainFooter form > div {
+    margin: 1em;
+    display: block;
+}
+
+footer#mainFooter label input {
+    padding-left: 0.5em;
+    width: 40%;
+}
+footer#mainFooter label textarea {
+    padding-left: 0.5em;
+    width: 80%;
+    resize: vertical;
+}
+
+footer#mainFooter form > div input {
+    padding: 1em;
+}
+
+footer#mainFooter .right {
+    line-height: 3em;
+}
 
 /******************************************************************************************/
 /** NAVIGATION PANEL                                                                     **/
@@ -415,6 +441,12 @@ h3 {
 h4 {
     font-family: FontAwesome sans-serif;
     font-size: 1.1em;
+}
+
+.ftype_contact {
+    font-family: FontAwesome sans-serif;
+    font-size: 1.2em;
+    line-height: 2em;
 }
 
 .link1 {
