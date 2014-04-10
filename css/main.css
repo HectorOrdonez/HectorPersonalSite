@@ -31,10 +31,9 @@ header#mainHeader {
     background-size: cover;
 }
 
-/** The Works **/
-article#articleTheWorks {
+/** The Skills **/
+article#articleTheSkills {
     position: relative;
-    min-height: 100%;
     width: 100%;
     background-color: #FFF;
 }
@@ -47,8 +46,8 @@ article#articleThePerson {
     background-size: cover;
 }
 
-/** The Skills **/
-article#articleTheSkills {
+/** The Works **/
+article#articleTheWorks {
     position: relative;
     width: 100%;
     background-color: #FFF;
@@ -87,14 +86,17 @@ nav button {
     cursor: pointer;
     border: 0;
 }
+
 nav > a {
     height: 100%;
     padding: 0 1em;
     float: left;
 }
+
 nav ul {
     float: right;
 }
+
 nav ul li {
     margin: 0 0.5em;
     display: inline-block;
@@ -182,12 +184,15 @@ article#articleTheSkills .knowledge {
 article#articleTheSkills #masterOfPHP {
     background-image: url('./../images/masterOfPHP.png');
 }
-article#articleTheSkills #masterOfJS{
+
+article#articleTheSkills #masterOfJS {
     background-image: url('./../images/masterOfJS.png');
 }
+
 article#articleTheSkills #masterOfCSS {
-    background-image: url('./../images/masterOfCSS.png');   
+    background-image: url('./../images/masterOfCSS.png');
 }
+
 article#articleTheSkills #masterOfMySQL {
     background-image: url('./../images/masterOfMySQL.png');
 }
@@ -203,9 +208,61 @@ article#articleThePerson .description {
     width: 50%;
     text-align: justify;
 }
+
 /******************************************************************************************/
 /** THE WORKS                                                                            **/
 /******************************************************************************************/
+article#articleTheWorks {
+    max-width: 50em;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 3em;
+}
+
+article#articleTheWorks header {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+article#articleTheWorks #worksBox {
+
+}
+
+article#articleTheWorks #worksBox .work {
+    position: relative;
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    background: no-repeat center;
+    background-size: contain;
+    padding-bottom: 75%;
+    cursor: pointer;
+}
+
+article#articleTheWorks #worksBox #sample1 {
+    background-image: url('./../images/theWorks_sample1.jpg');
+}
+
+article#articleTheWorks #worksBox #sample2 {
+    background-image: url('./../images/theWorks_sample2.jpg');
+}
+
+article#articleTheWorks #worksBox #sample3 {
+    background-image: url('./../images/theWorks_sample3.jpg');
+}
+
+article#articleTheWorks #worksBox #sample4 {
+    background-image: url('./../images/theWorks_sample1.jpg');
+}
+
+article#articleTheWorks #worksBox #sample5 {
+    background-image: url('./../images/theWorks_sample2.jpg');
+}
+
+article#articleTheWorks #worksBox #sample6 {
+    background-image: url('./../images/theWorks_sample3.jpg');
+}
 
 /******************************************************************************************/
 /** THE DIFFERENCE                                                                       **/
@@ -259,10 +316,10 @@ h2 {
     color: #000;
     transition: background 1s;
 }
+
 .ftype_title:hover {
     background-color: rgba(40, 40, 40, 0.6);
 }
-
 
 .ftype_link1 {
     font-family: FontAwesome sans-serif;
