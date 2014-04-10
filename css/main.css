@@ -204,7 +204,7 @@ article#articleThePerson .description {
     position: relative;
     left: 15%;
     padding: 10% 0;
-    line-height: 1.5em;
+    line-height: 2em;
     width: 50%;
     text-align: justify;
 }
@@ -267,6 +267,100 @@ article#articleTheWorks #worksBox #sample6 {
 /******************************************************************************************/
 /** THE DIFFERENCE                                                                       **/
 /******************************************************************************************/
+article#articleTheDifference header {
+    padding-top: 1em;
+    line-height: 3em;
+    text-align: center;
+}
+
+article#articleTheDifference header h2 {
+    display: inline;
+    padding: .5em;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+article#articleTheDifference .verticalDivision {
+    height: 3em;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 1em auto;
+}
+
+article#articleTheDifference #differenceContentBox {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    min-height: 10em;
+    margin-bottom: 1em;
+}
+
+article#articleTheDifference #differenceSelectionBox {
+    width: 18em; /** difference options width x 3 **/
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+article#articleTheDifference #differenceSelectionBox div {
+    float: left;
+    background: no-repeat center;
+    padding: 2em 1em;
+    width: 4em;
+    height: 4em;
+}
+
+article#articleTheDifference #differenceContentBox > button {
+    position: absolute;
+    background: no-repeat center;
+    height: 100%;
+    width: 15%;
+    float: left;
+    cursor: pointer;
+}
+
+article#articleTheDifference #differenceContentBox > div {
+    margin-left: 15%;
+    width: 70%;
+    float: left;
+}
+
+
+article#articleTheDifference #differenceContentBox button.left {
+    background-image: url('./../images/arrowLeft.png');
+}
+
+article#articleTheDifference #differenceContentBox button.right {
+    background-image: url('./../images/arrowRight.png');
+}
+
+
+article#articleTheDifference #differenceContentBox .title {
+    padding: 1em;
+    text-align: center;
+}
+
+article#articleTheDifference #differenceContentBox .content {
+    padding: 1em;
+    text-align: center;
+}
+
+article#articleTheDifference #differenceSelectionBox #differenceSelector1 {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+article#articleTheDifference #differenceSelectionBox #differenceSelector1 {
+    background-image: url('./../images/theDifference_1.png');
+}
+article#articleTheDifference #differenceSelectionBox #differenceSelector2 {
+    background-image: url('./../images/theDifference_2.png');
+}
+article#articleTheDifference #differenceSelectionBox #differenceSelector3 {
+    background-image: url('./../images/theDifference_3.png');
+}
+
+/** Hiding by default these differences. **/
+article#articleTheDifference #differenceContent2, article#articleTheDifference #differenceContent3 {
+    display: none;
+}  
 
 /******************************************************************************************/
 /** CONTACT ME                                                                           **/
@@ -304,35 +398,34 @@ article#articleTheWorks #worksBox #sample6 {
 
 h1 {
     font-weight: bold;
+    font-family: FontAwesome sans-serif;
     font-size: 2em;
 }
 
 h2 {
+    font-family: FontAwesome sans-serif;
     font-size: 1.5em;
 }
 
-.ftype_title {
+h3 {
     font-family: FontAwesome sans-serif;
-    color: #000;
-    transition: background 1s;
+    font-size: 1.2em;
 }
 
-.ftype_title:hover {
-    background-color: rgba(40, 40, 40, 0.6);
-}
-
-.ftype_link1 {
+h4 {
     font-family: FontAwesome sans-serif;
-    color: #000;
-    transition: background 1s;
-}
-
-.ftype_link1:hover {
-    background-color: rgba(40, 40, 40, 0.6);
-}
-
-.ftype_content1 {
     font-size: 1.1em;
-    font-family: fontawesome sans-serif;
-    color: #fff;
+}
+
+.link1 {
+    color: #000;
+    transition: background 1s;
+}
+
+.link1:hover {
+    background-color: rgba(40, 40, 40, 0.6);
+}
+
+.ftype_white {
+    color: #FFF;
 }
