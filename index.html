@@ -234,6 +234,31 @@
 
 <!-- JS Libraries -->
 <script type="text/javascript" src='./js/external/jquery-2.1.0.js'></script>
-<script type="text/javascript" src='./js/index.js'></script>
+<script type="text/javascript" src='./js/awesomeHectorWebsite.js'></script>
+<script>
+    jQuery(document).ready(function () {
+        var $nav = jQuery('nav');
+        var $webNavPanel = jQuery('#webNavPanel');
+        var webNavPanelLinks = $webNavPanel.find('a');
+        
+        /**
+         * Initializing the awesome.
+         * @type {awesomeHectorWebsite}
+         */
+        var mySite = new awesomeHectorWebsite($webNavPanel);
+
+        /**
+         * The nav button triggers the showing and the closing of the web navigation panel.
+         */
+        mySite.toggleWebNavOnClick($nav.find('.button'));
+        mySite.enableSmoothScrolling($nav.find('a'));
+
+        /**
+         * When clicking any link in the web navigation panel, this panel has to close.
+         */
+        mySite.toggleWebNavOnClick(webNavPanelLinks);
+        mySite.enableSmoothScrolling(webNavPanelLinks);
+    });
+</script>
 </body>
 </html>
