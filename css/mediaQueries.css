@@ -13,7 +13,7 @@
 /** Smart phones in screen layout **/
 @media screen and (max-width: 479px) {
     body {
-        font-size: 90%;
+        font-size: 85%;
     }
     
     .col1of2 {
@@ -60,7 +60,7 @@
 /** iPads and smart phones in landscape layouts **/
 @media screen and (min-width: 480px) and (max-width: 720px) {
     body {
-        font-size: 100%;
+        font-size: 95%;
     }
     
     .col1of2 {
@@ -107,7 +107,7 @@
 /** Regular screens **/
 @media screen and (min-width: 721px) and (max-width: 1024px) {
     body {
-        font-size: 110%;
+        font-size: 100%;
     }
     
     .col1of2 {
@@ -146,7 +146,7 @@
         width: 100%;
     }
 
-    nav button {
+    nav .button {
         display: none;
     }
 }
@@ -156,8 +156,12 @@
     body {
         font-size: 120%;
     }
-    .wrap {
-        max-width: 770px;
+    .wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 50em;
+        height: 100%;
+        margin: 0 auto;
     }
     
     .col1of2 {
@@ -196,7 +200,7 @@
         width: 100%;
     }
 
-    nav button {
+    nav .button {
         display: none;
     }
 }

@@ -16,17 +16,16 @@ jQuery(document).ready(function () {
     enableSmoothScrolling($nav.find('a'));
     
     // Navigation functionality events
-    $nav.find('button').click(function () {
-        openNavigationPanel();
+    $nav.find('.button').click(function () {
+        toggleNavigationPanel();
     });
 
-    var $webNavPanel = jQuery('#webNavPanel');
-    $webNavPanel.find('button').click(function () {
-        closeNavigationPanel();
-    });
+    var webNavPanelLinks = jQuery('#webNavPanel').find('a');
+    
+    enableSmoothScrolling(webNavPanelLinks);
 
-    $webNavPanel.find('li').click(function () {
-        closeNavigationPanel();
+    webNavPanelLinks.click(function () {
+        toggleNavigationPanel();
     });
 
     // Scrolling events
@@ -34,11 +33,8 @@ jQuery(document).ready(function () {
 
 });
 
-function openNavigationPanel() {
-    jQuery('#webNavPanel').slideDown();
-}
-function closeNavigationPanel() {
-    jQuery('#webNavPanel').slideUp();
+function toggleNavigationPanel() {
+    jQuery('#webNavPanel').slideToggle();
 }
 
 function scrollController() {
@@ -73,8 +69,8 @@ function navPositioning(currentPosition) {
  * @param links
  */
 function enableSmoothScrolling(links) {
-    var speed = 450;
-    var moving_frequency = 15; // Affects performance !
+    var speed = 500;
+    var moving_frequency = 25; // Affects performance !
     var href;
     for (var i = 0; i < links.length; i++) {
         href = (typeof(links[i].attributes.href) == 'undefined') ? null : links[i].attributes.href.nodeValue.toString();

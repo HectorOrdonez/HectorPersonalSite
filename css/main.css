@@ -14,21 +14,43 @@
 /** GENERAL STRUCTURE                                                                    **/
 /******************************************************************************************/
 
+/** Body **/
+body {
+    background-color: #FFF;
+}
+
 /** Nav **/
 nav {
-    position: relative;
+    position: fixed;
     height: 3em;
     width: 100%;
-    background-color: #FFFFFF;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: -moz-linear-gradient(top, #000, rgba(0, 0, 0, 0.5));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(rgba(0,0,0,0.5)));
+    background-image: -webkit-linear-gradient(top, #0, rgba(0,0,0,0.5));
+    background-image: -o-linear-gradient(top, #0, rgba(0,0,0,0.5));
+    background-image: linear-gradient(to bottom, #0, rgba(0,0,0,0.5));
+    background-repeat: repeat-x;
+}
+
+/** Fake nav **/
+div#fakeNav {
+    position: relative;
+    height: 3em;
+    background-color: #000;
 }
 
 /** Header **/
 header#mainHeader {
     position: relative;
     min-height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 1));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 1)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 1));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 1));
     width: 100%;
-    background-image: url('./../images/header.png');
-    background-size: cover;
 }
 
 /** The Skills **/
@@ -65,7 +87,7 @@ article#articleTheDifference {
 /** Contact me! **/
 footer#mainFooter {
     position: relative;
-    background-color: #444;
+    background-color: #000;
 }
 
 /******************************************************************************************/
@@ -75,20 +97,31 @@ nav {
     line-height: 3em;
 }
 
-nav button {
-    float: right;
-    width: 2em;
-    height: 2em;
-    background: url('./../images/icon_open.png');
-    background-size: contain;
+nav .button { /** Total content has 27px **/
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -15.5px;
+    width: 3em;
+    height: 2.5em;
     cursor: pointer;
-    border: 0;
+    padding-top: 5px;
 }
 
-nav > a {
-    height: 100%;
+nav .button > div {
+    display: block;
+    width: 22px;
+    height: 3px; /** x 3 = 9px **/
+    background-color: #fff;
+    margin: 0 auto 5px auto; /* x 3 = 15px **/
+}
+
+nav > div > a {
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 0 1em;
-    float: left;
+    height: 100%;
 }
 
 nav ul {
@@ -104,7 +137,7 @@ nav ul li {
 nav ul a {
     height: 100%;
     font-size: 90%;
-    padding: 0 1em;
+    padding: 0 .6em;
     display: block;
 }
 
@@ -123,7 +156,18 @@ nav ul a {
 /** Which is the height. For the vertical positioning,  **/
 /** The half of it has to be set as margin-top.         **/
 /*********************************************************/
-
+header#mainHeader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    background-image: url('http://www.wordcamphouston.com/wp-content/themes/Fun_Design_Grunge/images/slider5.jpg');
+    background-size: cover;
+}
 #mainHeader #header-wrap {
     position: absolute;
     top: 50%;
@@ -132,36 +176,33 @@ nav ul a {
     width: 100%;
     height: 14.5em;
     text-align: center;
-    line-height: 3em;
+    color: #FFF;
 }
 
-#mainHeader #header-wrap h1 {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: .5em;
-    margin: .5em;
-    display: inline-block;
+#mainHeader #header-wrap h2{
+    line-height: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-#mainHeader #header-wrap h2 {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: .5em;
-    margin: .5em;
-    display: inline-block;
+#mainHeader #header-wrap h1{
+    line-height: 2em;
+    padding: 0 0.5em;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /******************************************************************************************/
 /** THE SKILLS                                                                           **/
 /******************************************************************************************/
-article#articleTheSkills {
-    max-width: 50em;
-    margin: 0 auto;
+article#articleTheSkills .wrapper {
+    position: relative;
     overflow: hidden;
-    padding-bottom: 3em;
+    padding: 3em 0;
 }
 
 article#articleTheSkills header {
     line-height: 3em;
     text-align: center;
+    border-bottom: 1px solid #000;
 }
 
 /*********************************************************/
@@ -194,8 +235,8 @@ article#articleTheSkills #masterOfCSS {
     background-image: url('./../images/masterOfCSS.png');
 }
 
-article#articleTheSkills #masterOfMySQL {
-    background-image: url('./../images/masterOfMySQL.png');
+article#articleTheSkills #masterOfSQL {
+    background-image: url('./../images/masterOfSQL.png');
 }
 
 /******************************************************************************************/
@@ -213,12 +254,11 @@ article#articleThePerson .description {
 /******************************************************************************************/
 /** THE WORKS                                                                            **/
 /******************************************************************************************/
-article#articleTheWorks {
-    max-width: 50em;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-bottom: 3em;
-}
+
+article#articleTheWorks .wrapper {
+    overflow: hidden; /** Stop the floating **/
+    padding: 3em 0;
+} 
 
 article#articleTheWorks header {
     margin: 1.5em 0;
@@ -404,21 +444,16 @@ footer#mainFooter .right {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    z-index: 1000;
-
-    background-color: #3D1004;
+    z-index: 499; /** Behind nav **/
+    padding-top: 3em;   
+    background-color: #000;
     display: none;
 }
 
-#webNavPanel button {
-    float: right;
-    width: 2em;
-    height: 2em;
-    background: url('./../images/icon_close.png');
-    background-size: contain;
-    cursor: pointer;
-    border: 0;
+#webNavPanel ul li a {
+    display: block;
+    line-height: 3em;
+    padding: 0 1em;
 }
 
 /******************************************************************************************/
@@ -427,38 +462,42 @@ footer#mainFooter .right {
 
 h1 {
     font-weight: bold;
-    font-family: FontAwesome sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 2em;
 }
 
 h2 {
-    font-family: FontAwesome sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.5em;
 }
 
 h3 {
-    font-family: FontAwesome sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.2em;
 }
 
 h4 {
-    font-family: FontAwesome sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.1em;
 }
 
+a {
+    font-family: 'Nunito', sans-serif;
+}
+
 .ftype_contact {
-    font-family: FontAwesome sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.2em;
     line-height: 2em;
 }
 
 .link1 {
-    color: #000;
+    color: #FFF;
     transition: background 1s;
 }
 
 .link1:hover {
-    background-color: rgba(40, 40, 40, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .ftype_white {

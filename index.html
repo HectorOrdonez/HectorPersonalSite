@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/mediaQueries.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -15,28 +16,42 @@
     In the navigation panel are the "title" of the site at left and a button at right for phones and iPads and links to site's sections for bigger screens  
 -->
 <nav>
-    <a class='ftype_title link1' title='Our amazing site!' href='#'>Hector, the developer</a>
+    <div class='wrapper'>
+        <a class='link1' title='Our amazing site!' href='#fakeNav'>Hector, the developer</a>
 
-    <button type='button'></button>
+        <div class='button'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
-    <ul>
-        <li>
-            <a title='The Skills' class='link1' href='#articleTheSkills'>the skills</a>
-        </li>
-        <li>
-            <a title='The Person' class='link1' href='#articleThePerson'>the person</a>
-        </li>
-        <li>
-            <a title='The Works' class='link1' href='#articleTheWorks'>the work</a>
-        </li>
-        <li>
-            <a title='The Difference' class='link1' href='#articleTheDifference'>the difference</a>
-        </li>
-        <li>
-            <a title='Contact me' class='link1' href='#mainFooter'>contact me</a>
-        </li>
-    </ul>
+        <ul>
+            <li>
+                <a title='The Skills' class='link1' href='#articleTheSkills'>the skills</a>
+            </li>
+            <li>
+                <a title='The Person' class='link1' href='#articleThePerson'>the person</a>
+            </li>
+            <li>
+                <a title='The Works' class='link1' href='#articleTheWorks'>the works</a>
+            </li>
+            <li>
+                <a title='The Difference' class='link1' href='#articleTheDifference'>the difference</a>
+            </li>
+            <li>
+                <a title='Contact me' class='link1' href='#mainFooter'>contact me</a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
+<!--
+    The fake nav.
+    It is just a white space in top of the page, as the real nav is fixed.
+-->
+<div id='fakeNav'>
+    
+</div>
 
 <!--
     The header.
@@ -45,14 +60,20 @@
 <header id='mainHeader'>
     <div id='header-wrap'>
         <div>
+            <h2>
+                My name is Hector, and I am 
+            </h2>
+        </div>
+        <div>
             <h1>
-                Soy Héctor, desarrollador Web
+                Web Developer
             </h1>
         </div>
         <div>
             <h2>
-                Experto en PHP, JavaScript, JQuery y CSS.
+                Expert in PHP, SQL, JS and CSS.
             </h2>
+            <div class='redLine'></div>
         </div>
 
     </div>
@@ -64,26 +85,27 @@
 -->
 
 <article id='articleTheSkills'>
-    <header>
-        <h2>
-            the skills
-        </h2>
-    </header>
-    <div class='col col1of2'>
-        <div class='knowledge' id='masterOfPHP'></div>
-        <div class='knowledge' id='masterOfCSS'></div>
-    </div>
-    <div class='col col1of2'>
-        <div class='knowledge' id='masterOfMySQL'></div>
-        <div class='knowledge' id='masterOfJS'></div>
+    <div class='wrapper'>
+        <header>
+            <h2>
+                I have mastered ...
+            </h2>
+        </header>
+        <div class='col col1of2'>
+            <div class='knowledge' id='masterOfPHP'></div>
+            <div class='knowledge' id='masterOfSQL'></div>
+        </div>
+        <div class='col col1of2'>
+            <div class='knowledge' id='masterOfCSS'></div>
+            <div class='knowledge' id='masterOfJS'></div>
+        </div>
     </div>
 </article>
 
 <article id='articleThePerson'>
     <div class='description ftype_white'>
         <h4>
-            Mariano Nieto es un comerciante con más 25 años de experiencia en ramo de la reparación de calzado, duplicado de todo tipo de llaves, afilados, placas de buzón y mandos de
-            parking, etc.
+            
         </h4>
         <h4>
             Después de prestar sus servicios durante 8 años en Pryca Terrassa y 22 años en la calle Ricardo Caro esquina con avenida Barcelona (Terrassa), la tienda se reubica a la
@@ -96,19 +118,21 @@
 </article>
 
 <article id='articleTheWorks'>
-    <header>
-        <h2>
-            the works
-        </h2>
-    </header>
-    
-    <div id='worksBox'>
-        <div class='col col1of3'><div class='work' id='sample1'></div></div>
-        <div class='col col1of3'><div class='work' id='sample2'></div></div>
-        <div class='col col1of3'><div class='work' id='sample3'></div></div>
-        <div class='col col1of3'><div class='work' id='sample4'></div></div>
-        <div class='col col1of3'><div class='work' id='sample5'></div></div>
-        <div class='col col1of3'><div class='work' id='sample6'></div></div>
+    <div class='wrapper'>
+        <header>
+            <h2>
+                I have done ... 
+            </h2>
+        </header>
+
+        <div id='worksBox'>
+            <div class='col col1of3'><div class='work' id='sample1'></div></div>
+            <div class='col col1of3'><div class='work' id='sample2'></div></div>
+            <div class='col col1of3'><div class='work' id='sample3'></div></div>
+            <div class='col col1of3'><div class='work' id='sample4'></div></div>
+            <div class='col col1of3'><div class='work' id='sample5'></div></div>
+            <div class='col col1of3'><div class='work' id='sample6'></div></div>
+        </div>
     </div>
 </article>
 
@@ -155,39 +179,57 @@
 </article>
 
 <footer id='mainFooter'>
-    <div class='col col1of2 left'>
-        <form>
-            <label for='contactName'>
-                <input class='ftype_contact' type='text' placeholder="Name" id='contactName'/>
-            </label>
-            <label for='contactMail'>
-                <input class='ftype_contact'  type='text' placeholder="eMail" id='contactMail'/>
-            </label>
-            <label for='contactMessage'>
-                <textarea class='ftype_contact' placeholder="Your message here." id='contactMessage'></textarea>
-            </label>
-            <div>
-                <input type='submit' id='submitContact' value='SEND' />
-            </div>
-        </form>
-    </div>
-    <div class='col col1of2 ftype_white right'>
-        <h3>
-            Or you can find me at:
-        </h3>
-        <h3>
-            blabla @gmail.com
-        </h3>
-        <h3>
-            (+34) 654 327 643
-        </h3>
+    <div class='wrapper'>
+        <div class='col col1of2 left'>
+            <form>
+                <label for='contactName'>
+                    <input class='ftype_contact' type='text' placeholder="Name" id='contactName'/>
+                </label>
+                <label for='contactMail'>
+                    <input class='ftype_contact'  type='text' placeholder="eMail" id='contactMail'/>
+                </label>
+                <label for='contactMessage'>
+                    <textarea class='ftype_contact' placeholder="Your message here." id='contactMessage'></textarea>
+                </label>
+                <div>
+                    <input type='submit' id='submitContact' value='SEND' />
+                </div>
+            </form>
+        </div>
+        <div class='col col1of2 ftype_white right'>
+            <h3>
+                Or you can find me at:
+            </h3>
+            <h3>
+                blabla @gmail.com
+            </h3>
+            <h3>
+                (+34) 654 327 643
+            </h3>
+        </div>
     </div>
 </footer>
 
 <!-- Web navigation panel - For little screens only -->
 
 <div id='webNavPanel'>
-    <button type='button'></button>
+    <ul>
+        <li>
+            <a title='The Skills' class='link1' href='#articleTheSkills'>the skills</a>
+        </li>
+        <li>
+            <a title='The Person' class='link1' href='#articleThePerson'>the person</a>
+        </li>
+        <li>
+            <a title='The Works' class='link1' href='#articleTheWorks'>the works</a>
+        </li>
+        <li>
+            <a title='The Difference' class='link1' href='#articleTheDifference'>the difference</a>
+        </li>
+        <li>
+            <a title='Contact me' class='link1' href='#mainFooter'>contact me</a>
+        </li>
+    </ul>
 </div>
 
 <!-- JS Libraries -->
