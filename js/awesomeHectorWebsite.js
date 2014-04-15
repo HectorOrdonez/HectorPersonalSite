@@ -9,13 +9,13 @@
 /**
  * Amazing Hector Website constructor.
  * @constructor
- * 
+ *
  * @param webNavElement Expected to be jQuery object.
  */
 function awesomeHectorWebsite(webNavElement) {
     var $webNavPanel;
     var self = this;
-    
+
     /*****************************************************************************************************************/
     /** Public methods                                                                                              **/
     /*****************************************************************************************************************/
@@ -71,12 +71,11 @@ function awesomeHectorWebsite(webNavElement) {
     };
 
     this.toggleWebNavOnClick = function (element) {
-        element.click(function()
-        {
+        element.click(function () {
             $webNavPanel.slideToggle();
         });
     };
-    
+
     /*****************************************************************************************************************/
     /** Site construction                                                                                           **/
     /*****************************************************************************************************************/
@@ -97,21 +96,43 @@ function awesomeHectorWebsite(webNavElement) {
     /*****************************************************************************************************************/
 
     function validate() {
-        if (webNavElement == 'undefined')
-        {
+        if (webNavElement == 'undefined') {
             throw 'Web navigation element expected to be jQuery object. Undefined instead.';
         }
-        
-        if (!(webNavElement instanceof jQuery))
-        {
+
+        if (!(webNavElement instanceof jQuery)) {
             throw 'webNavElement must be an instance of jQuery.';
         }
     }
-    
+
     function initialize() {
-        $webNavPanel = webNavElement; 
+        $webNavPanel = webNavElement;
+
+        /**
+         * Showing off with the amazing title!
+         */
+        // Get the three elements
+        var titles = jQuery('#header-wrap').find('.title');
+
+        var lastEffect = function () {
+            console.log('last');
+            console.log(titles[2]);
+            setTimeout(
+                function(){
+                    jQuery(titles[2]).letterfx({"fx": "smear", "words": true, "timing": 100});
+                }, 1000
+            );
+        };
+        var secondEffect = function () {
+            console.log('second');
+            console.log(titles[1]);
+            jQuery(titles[1]).letterfx({"fx": "smear", "words": true, "timing": 100, onElementComplete: lastEffect});
+        };
+        
+        jQuery(titles[0]).letterfx({"fx": "smear", "words": true, "timing": 100, onElementComplete: secondEffect});
+
     }
-    
+
     function displayError(msg) {
         console.error('Received error while initializing website: ' + msg);
     }

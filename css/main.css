@@ -153,6 +153,10 @@ header#mainHeader #header-wrap {
     color: #FFF;
 }
 
+header#mainHeader #header-wrap .title {
+    display: none;
+}
+
 header#mainHeader:before {
     content: '';
     display: inline-block;

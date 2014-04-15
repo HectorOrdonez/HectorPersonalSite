@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Hector, the amazing developer</title>
 
-    <link rel="stylesheet" href="./css/reset.css"/>
-    <link rel="stylesheet" href="./css/mediaQueries.css"/>
-    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mediaQueries.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/external/letterFx.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:400,100,200,300,500,600,700,800,900|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet' type='text/css'>
 </head>
@@ -61,17 +62,17 @@
 <header id='mainHeader'>
     <div id='header-wrap'>
         <div>
-            <h2>
+            <h2 class='title'>
                 My name is Hector, and I am an
             </h2>
         </div>
         <div>
-            <h1>
+            <h1 class='title'>
                 International Web Developer
             </h1>
         </div>
         <div>
-            <h2>
+            <h2 class='title'>
                 Expert in PHP, SQL, JS and CSS.
             </h2>
         </div>
@@ -331,6 +332,8 @@
 <!-- JS Libraries -->
 <script type="text/javascript" src='./js/external/jquery-2.1.0.js'></script>
 <script type="text/javascript" src='./js/awesomeHectorWebsite.js'></script>
+<script src="js/external/letterFx.js" type="text/javascript"></script>
+
 <script>
     jQuery(document).ready(function () {
         var $nav = jQuery('nav');
