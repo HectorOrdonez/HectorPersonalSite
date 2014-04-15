@@ -12,6 +12,10 @@
 
 /** Smart phones in screen layout **/
 @media screen and (max-width: 479px) {
+    #mainHeader {
+        font-size: 30%;
+    }
+    
     .col1of2 {
         width: 100%;
     }
@@ -55,6 +59,10 @@
 
 /** iPads and smart phones in landscape layouts **/
 @media screen and (min-width: 480px) and (max-width: 720px) {
+    #mainHeader {
+        font-size: 45%;
+    }
+    
     .col1of2 {
         width: 50%;
     }
@@ -98,6 +106,10 @@
 
 /** Regular screens **/
 @media screen and (min-width: 721px) and (max-width: 1024px) {
+    #mainHeader {
+        font-size: 70%;
+    }
+    
     .col1of2 {
         width: 50%;
     }

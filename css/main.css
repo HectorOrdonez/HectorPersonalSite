@@ -46,10 +46,11 @@ div#fakeNav {
 /** Header **/
 header#mainHeader {
     position: relative;
-    min-height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
+    height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
     width: 100%;
     background-image: url('./../images/fondo.jpg');
     background-size: cover;
+    text-align: center;
 }
 
 /** The Skills **/
@@ -146,24 +147,27 @@ nav ul a {
 /*********************************************************/
 /** Header wrap centers vertically the text block.      **/
 /*********************************************************/
-#mainHeader #header-wrap {
-    position: absolute;
-    top: 50%;
-    margin-top: -10.5em;    /** text height + nav height / 2 **/
-    margin-left: auto;
-    width: 100%;
-    height: 18em;
-    text-align: center;
+header#mainHeader #header-wrap {
+    display: inline-block;
+    vertical-align: middle;
     color: #FFF;
 }
 
-#mainHeader #header-wrap h2{
+header#mainHeader:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: 0.25em;
+}
+
+header#mainHeader #header-wrap h2{
     font-size: 2.5em;
     font-weight: 300;
     line-height: 2em;
 }
 
-#mainHeader #header-wrap h1{
+header#mainHeader #header-wrap h1{
     font-size: 4em;
     line-height: 2em;
     padding: 0 0.5em;
