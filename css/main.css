@@ -48,7 +48,6 @@ header#mainHeader {
     position: relative;
     min-height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
     width: 100%;
-    height: 100%;
     background-image: url('./../images/fondo.jpg');
     background-size: cover;
 }
@@ -185,42 +184,62 @@ article#articleTheSkills header {
 }
 
 /*********************************************************/
-/** Each knowledge is set to cover the half of its      **/
-/** column.                                             **/
-/** Each column's height is 
+/**                                                     **/
 /*********************************************************/
+
+article#articleTheSkills {}
 
 article#articleTheSkills .knowledge {
     position: relative;
-    width: 50%;
-    height: auto;
     overflow: hidden;
-    margin: 0 auto;
-    background: no-repeat center;
-    background-size: contain;
-    padding-bottom: 50%;
-    cursor: pointer;
+    padding: 1em 0;
+}
+article#articleTheSkills .knowledge:not(:last-child):after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    margin-top: 25px;
+    display: block;
+    position: absolute;
+    left: 25%;
+    z-index: 1;
+    box-shadow: 0 0 25px 1px #000000;
 }
 
-article#articleTheSkills #masterOfPHP {
-    background-image: url('./../images/masterOfPHP.png');
+article#articleTheSkills .knowledge .text {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(80% - 5em);
+    line-height: 2em;
 }
 
-article#articleTheSkills #masterOfJS {
-    background-image: url('./../images/masterOfJS.png');
+article#articleTheSkills .knowledge .image {
+    display: inline-block;
+    width: 20%;
+    margin: 2em;
+    background-size: cover;
+    padding-bottom: 20%;
+    vertical-align: middle;
 }
 
-article#articleTheSkills #masterOfCSS {
-    background-image: url('./../images/masterOfCSS.png');
-}
-
-article#articleTheSkills #masterOfSQL {
-    background-image: url('./../images/masterOfSQL.png');
-}
+article#articleTheSkills .masterOfPHP .image { background-image: url('./../images/masterOfPHP.png'); }
+article#articleTheSkills .masterOfJS  .image { background-image: url('./../images/masterOfJS.png'); }
+article#articleTheSkills .masterOfCSS .image { background-image: url('./../images/masterOfCSS.png'); }
+article#articleTheSkills .masterOfSQL .image { background-image: url('./../images/masterOfSQL.png'); }
 
 /******************************************************************************************/
 /** THE PERSON                                                                           **/
 /******************************************************************************************/
+
+article#articleThePerson {
+    padding: 3em 0;
+}
+
+article#articleThePerson header {
+        line-height: 3em;
+        text-align: center;
+}
+
 article#articleThePerson .description {
     position: relative;
     left: 15%;
@@ -240,7 +259,7 @@ article#articleTheWorks .wrapper {
 } 
 
 article#articleTheWorks header {
-    margin: 1.5em 0;
+    line-height: 3em;
     text-align: center;
 }
 
@@ -296,7 +315,6 @@ article#articleTheDifference header {
 article#articleTheDifference header h2 {
     display: inline;
     padding: .5em;
-    background-color: rgba(255, 255, 255, 0.3);
 }
 
 article#articleTheDifference .verticalDivision {

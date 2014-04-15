@@ -17,8 +17,6 @@
     In the navigation panel are the "title" of the site at left and a button at right for phones and iPads and links to site's sections for bigger screens  
 -->
 <nav>
-    <div class='shadow'></div>
-
     <div class='wrapper'>
         <a id='siteTitle' title='Our amazing site!' href='#fakeNav'>Hector</a>
 
@@ -92,34 +90,109 @@
     <div class='wrapper'>
         <header>
             <h2>
-                I have mastered ...
+                the skills
             </h2>
         </header>
-        <div class='col col1of2'>
-            <div class='knowledge' id='masterOfPHP'></div>
-            <div class='knowledge' id='masterOfSQL'></div>
+        <div class='knowledge masterOfPHP'>
+            <div class='image'></div>
+            <div class='text'>
+                <p>
+                    I have developed websites, applications and web services in PHP.
+                </p>
+
+                <p>
+                    Since the old good PHP 5.2 till the newest stable version, 5.5, with which I developed a custom PHP Framework.
+                </p>
+
+                <p>
+                    With experience in Kohana and Zend Frameworks.
+                </p>
+
+                <p>
+                    Known and used different design patterns, such as MVC and Factory.
+                </p>
+
+                <p>
+                    Nowadays mastering the art of TDD (Test Driven Development) with PHPUnit for the unit testings.
+                </p>
+            </div>
         </div>
-        <div class='col col1of2'>
-            <div class='knowledge' id='masterOfCSS'></div>
-            <div class='knowledge' id='masterOfJS'></div>
+        <div class='knowledge masterOfSQL'>
+            <div class='image'></div>
+            <div class='text'>
+                <p>
+                    I have used SQL as the query language for data management.
+                </p>
+
+                <p>
+                    Built complex queries with the right use of the different join types.
+                </p>
+
+                <p>
+                    With practical experience in tables with large amounts of data (>50M of rows) and the importance of the right indexing, column type and storage engine.
+                </p>
+            </div>
+        </div>
+        <div class='knowledge masterOfCSS'>
+            <div class='image'></div>
+            <div class='text'>
+                <p>
+                    As front-end developer, I learned CSS in order to build beautiful websites like this one!
+                </p>
+
+                <p>
+                    Learned to use CSS to make a dynamic website with cross-browsing styles.
+                </p>
+
+                <p>
+                    With Responsive Design in mind, I can build websites that adapts to phones, pads and screens alike.
+                </p>
+            </div>
+        </div>
+        <div class='knowledge masterOfJS'>
+            <div class='image'></div>
+            <div class='text'>
+                <p>
+                    In order to build interactive websites I have used JavaScript to communicate with the user with Ajax and to make beautiful and complex visual effects.
+                </p>
+
+                <p>
+                    Used object oriented JavaScript in order to build scripts that interact with each other, making light-weighted scripts that, with procedural JavaScript would
+                    have been heavy instead.
+                </p>
+
+                <p>
+                    With experience in the famous JavaScript library jQuery, I have used it in order to simplify or extend the website scripts.
+                </p>
+            </div>
         </div>
     </div>
 </article>
 
 <article id='articleThePerson'>
-    <div class='description ftype_white'>
-        <p>
-
-        </p>
-
-        <p>
-            Después de prestar sus servicios durante 8 años en Pryca Terrassa y 22 años en la calle Ricardo Caro esquina con avenida Barcelona (Terrassa), la tienda se reubica a la
-            rambla Francesc Macia número 10 donde presta ahora sus servicios.
-        </p>
-
-        <p>
-            ¡En esta zona más comercial damos un salto de calidad manteniendo el precio de toda la vida!
-        </p>
+    <div class='wrapper'>
+        <header>
+            <h2>
+                the person
+            </h2>
+        </header>
+        <div class='description ftype_white'>
+            <p>
+                I was born in Canarias, a little island always sunny, and lived my early life in Barcelona until I realized that the world has more to offer than Sun. Thus I lived in England, Ireland and the Netherlands, enjoying their cultures and different ways of seeing the same things.
+            </p>
+            <p>
+                Besides travelling you will normally find me working on my latest crazy idea or daydreaming about how to conquer the Earth, all this while having a coffee with milk.
+            </p>
+            <p>
+                As software developer, I fell in love with PHP years ago and since then I can't stop researching its limits, learning new techniques and applying them in those crazy ideas of mine.
+            </p>
+            <p>
+                Currently looking for a new employment, a job that challenges me and offers the opportunity to keep developing amazing stuff.
+            </p>
+            <p>
+                However if you too have a crazy idea and need someone that can turn it into an amazing website or application run straight to the contact section and let me know about it!
+            </p>
+        </div>
     </div>
 </article>
 
@@ -228,6 +301,7 @@
                 <textarea class='input' name='message' id="textAreaForm">test</textarea>
 
                 <input type="button" name="buttonForm" value="send" id="buttonForm">
+
                 <div id='contactAnswerDisplayer'>Mail sent!</div>
             </form>
         </div>
