@@ -8,6 +8,10 @@
 /******************************************************************************************/
 /** COLOR PALETTE                                                                        **/
 /**                                                                                      **/
+/** Dark grey - #222                                                                     **/
+/** Light grey - #868686                                                                 **/
+/** Turquoise - #1fada3                                                                  **/
+/**                                                                                      **/
 /******************************************************************************************/
 
 /******************************************************************************************/
@@ -16,6 +20,9 @@
 
 /** Body **/
 body {
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     background-color: #FFF;
 }
 
@@ -25,13 +32,8 @@ nav {
     height: 3em;
     width: 100%;
     z-index: 500;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: -moz-linear-gradient(top, #000, rgba(0, 0, 0, 0.5));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(rgba(0,0,0,0.5)));
-    background-image: -webkit-linear-gradient(top, #0, rgba(0,0,0,0.5));
-    background-image: -o-linear-gradient(top, #0, rgba(0,0,0,0.5));
-    background-image: linear-gradient(to bottom, #0, rgba(0,0,0,0.5));
-    background-repeat: repeat-x;
+    background-color: #FFF;
+    box-shadow: 0 0 4px #868686;
 }
 
 /** Fake nav **/
@@ -45,12 +47,10 @@ div#fakeNav {
 header#mainHeader {
     position: relative;
     min-height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 1));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 1)));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 1));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 1));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 1));
     width: 100%;
+    height: 100%;
+    background-image: url('./../images/fondo.jpg');
+    background-size: cover;
 }
 
 /** The Skills **/
@@ -80,14 +80,15 @@ article#articleTheDifference {
     position: relative;
     min-height: 75%;
     width: 100%;
-    background-image: url('./../images/theDifference.jpg');
-    background-size: cover;
+    background-image: url('./../images/cartographer_1.jpg');
 }
 
 /** Contact me! **/
 footer#mainFooter {
     position: relative;
-    background-color: #000;
+    background-color: #222;
+    color: #FFF;
+    overflow: hidden;
 }
 
 /******************************************************************************************/
@@ -103,7 +104,6 @@ nav .button { /** Total content has 27px **/
     right: 0;
     margin-top: -15.5px;
     width: 3em;
-    height: 2.5em;
     cursor: pointer;
     padding-top: 5px;
 }
@@ -112,7 +112,7 @@ nav .button > div {
     display: block;
     width: 22px;
     height: 3px; /** x 3 = 9px **/
-    background-color: #fff;
+    background-color: #1fada3;
     margin: 0 auto 5px auto; /* x 3 = 15px **/
 }
 
@@ -136,7 +136,6 @@ nav ul li {
 
 nav ul a {
     height: 100%;
-    font-size: 90%;
     padding: 0 .6em;
     display: block;
 }
@@ -147,47 +146,28 @@ nav ul a {
 
 /*********************************************************/
 /** Header wrap centers vertically the text block.      **/
-/** This text block has the following height:           **/
-/** Top and bottom padding: 0.5em + 0.5em x2 (2 blocks) **/
-/** Top and bottom margin: 0.5em + 0.5em x2 (2 blocks)  **/
-/** Line height h1: base h1 * line height: 2em x 3em    **/
-/** Line height h2: base h2 * line height: 1.5em x 3em  **/
-/** Total: 2 + 2 + 6 + 4.5 = 14.5em                     **/
-/** Which is the height. For the vertical positioning,  **/
-/** The half of it has to be set as margin-top.         **/
 /*********************************************************/
-header#mainHeader:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    z-index: -1;
-    background-image: url('http://www.wordcamphouston.com/wp-content/themes/Fun_Design_Grunge/images/slider5.jpg');
-    background-size: cover;
-}
 #mainHeader #header-wrap {
     position: absolute;
     top: 50%;
-    margin-top: -7.25em;
+    margin-top: -10.5em;    /** text height + nav height / 2 **/
     margin-left: auto;
     width: 100%;
-    height: 14.5em;
+    height: 18em;
     text-align: center;
     color: #FFF;
 }
 
 #mainHeader #header-wrap h2{
+    font-size: 2.5em;
+    font-weight: 300;
     line-height: 2em;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #mainHeader #header-wrap h1{
+    font-size: 4em;
     line-height: 2em;
     padding: 0 0.5em;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /******************************************************************************************/
@@ -202,7 +182,6 @@ article#articleTheSkills .wrapper {
 article#articleTheSkills header {
     line-height: 3em;
     text-align: center;
-    border-bottom: 1px solid #000;
 }
 
 /*********************************************************/
@@ -406,48 +385,94 @@ article#articleTheDifference #differenceContent2, article#articleTheDifference #
 /******************************************************************************************/
 /** CONTACT ME                                                                           **/
 /******************************************************************************************/
-footer#mainFooter {
-    width: calc(100% - 6em);
-    padding: 3em;
-    overflow: hidden;
+
+/** Contact inputs **/
+footer#mainFooter {}
+
+footer#mainFooter p {
+    line-height: 2em;
 }
 
-footer#mainFooter form > label, footer#mainFooter form > div {
-    margin: 1em;
-    display: block;
+footer#mainFooter span {
+    font-weight: 600;
 }
 
-footer#mainFooter label input {
-    padding-left: 0.5em;
-    width: 40%;
+footer#mainFooter #formWrapper .input {
+    border: 2px solid #FFFFFF;
+    padding: 0.25em;
+    margin: 0.3em 0;
+    width: 90%;
+    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
 }
-footer#mainFooter label textarea {
-    padding-left: 0.5em;
-    width: 80%;
+
+footer#mainFooter #formWrapper .input:focus {
+    border: 2px solid #1fada3;
+}
+
+footer#mainFooter #formWrapper #textAreaForm {
     resize: vertical;
+    height: 8em;
 }
 
-footer#mainFooter form > div input {
-    padding: 1em;
+footer#mainFooter #buttonForm {
+    transition: opacity 0.5s ease;
+    background-color: #1fada3;
+    color: #fff;
+    padding: 0.6em 0.9em;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    display: inline;
+    margin-top: 0.6em;
 }
 
-footer#mainFooter .right {
-    line-height: 3em;
+footer#mainFooter #buttonForm:hover {
+    opacity: 0.6;
 }
 
+footer#mainFooter label {
+    line-height: 2em;
+}
+
+#contactAnswerDisplayer {
+    display: inline;
+}
 /******************************************************************************************/
 /** NAVIGATION PANEL                                                                     **/
 /******************************************************************************************/
 
 #webNavPanel {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 499; /** Behind nav **/
-    padding-top: 3em;   
-    background-color: #000;
+    top: 3em;
+    right: 0;
+    z-index: 501; /** Over nav **/
     display: none;
+    border-left: 1px solid #ddd;
+}
+#webNavPanel ul {
+    position: relative;
+    z-index: 501;
+    background-color: #fff;
+    overflow: hidden;
+    
+}
+
+#webNavPanel ul li {
+    background-color: #fff;
+    margin-bottom: 1px;
+    display: block;
+}
+
+#webNavPanel ul li:after {
+    content: "";
+    width: 75%;
+    height: 1px;
+    margin-top: -1px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 25px 1px #000000;
 }
 
 #webNavPanel ul li a {
@@ -460,44 +485,42 @@ footer#mainFooter .right {
 /** FONT STYLES                                                                          **/
 /******************************************************************************************/
 
+#siteTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    color:#1fada3;
+}
+
 h1 {
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
     font-size: 2em;
 }
 
 h2 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     font-size: 1.5em;
 }
 
-h3 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.2em;
-}
-
-h4 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.1em;
-}
-
 a {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .ftype_contact {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.2em;
     line-height: 2em;
 }
 
 .link1 {
-    color: #FFF;
+    color: #000;
     transition: background 1s;
 }
 
 .link1:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(31, 173, 163, 0.6);
 }
 
 .ftype_white {

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/mediaQueries.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:400,100,200,300,500,600,700,800,900|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -16,8 +17,10 @@
     In the navigation panel are the "title" of the site at left and a button at right for phones and iPads and links to site's sections for bigger screens  
 -->
 <nav>
+    <div class='shadow'></div>
+
     <div class='wrapper'>
-        <a class='link1' title='Our amazing site!' href='#fakeNav'>Hector, the developer</a>
+        <a id='siteTitle' title='Our amazing site!' href='#fakeNav'>Hector</a>
 
         <div class='button'>
             <div></div>
@@ -50,7 +53,7 @@
     It is just a white space in top of the page, as the real nav is fixed.
 -->
 <div id='fakeNav'>
-    
+
 </div>
 
 <!--
@@ -61,18 +64,19 @@
     <div id='header-wrap'>
         <div>
             <h2>
-                My name is Hector, and I am 
+                My name is Hector, and I am an
             </h2>
         </div>
         <div>
             <h1>
-                Web Developer
+                International Web Developer
             </h1>
         </div>
         <div>
             <h2>
                 Expert in PHP, SQL, JS and CSS.
             </h2>
+
             <div class='redLine'></div>
         </div>
 
@@ -104,16 +108,18 @@
 
 <article id='articleThePerson'>
     <div class='description ftype_white'>
-        <h4>
-            
-        </h4>
-        <h4>
+        <p>
+
+        </p>
+
+        <p>
             Después de prestar sus servicios durante 8 años en Pryca Terrassa y 22 años en la calle Ricardo Caro esquina con avenida Barcelona (Terrassa), la tienda se reubica a la
             rambla Francesc Macia número 10 donde presta ahora sus servicios.
-        </h4>
-        <h4>
+        </p>
+
+        <p>
             ¡En esta zona más comercial damos un salto de calidad manteniendo el precio de toda la vida!
-        </h4>
+        </p>
     </div>
 </article>
 
@@ -121,17 +127,29 @@
     <div class='wrapper'>
         <header>
             <h2>
-                I have done ... 
+                I have done ...
             </h2>
         </header>
 
         <div id='worksBox'>
-            <div class='col col1of3'><div class='work' id='sample1'></div></div>
-            <div class='col col1of3'><div class='work' id='sample2'></div></div>
-            <div class='col col1of3'><div class='work' id='sample3'></div></div>
-            <div class='col col1of3'><div class='work' id='sample4'></div></div>
-            <div class='col col1of3'><div class='work' id='sample5'></div></div>
-            <div class='col col1of3'><div class='work' id='sample6'></div></div>
+            <div class='col col1of3'>
+                <div class='work' id='sample1'></div>
+            </div>
+            <div class='col col1of3'>
+                <div class='work' id='sample2'></div>
+            </div>
+            <div class='col col1of3'>
+                <div class='work' id='sample3'></div>
+            </div>
+            <div class='col col1of3'>
+                <div class='work' id='sample4'></div>
+            </div>
+            <div class='col col1of3'>
+                <div class='work' id='sample5'></div>
+            </div>
+            <div class='col col1of3'>
+                <div class='work' id='sample6'></div>
+            </div>
         </div>
     </div>
 </article>
@@ -149,25 +167,28 @@
             <h2 class='title'>
                 SuperCool
             </h2>
-            <h4 class='content'>
+
+            <p class='content'>
                 This is a very cool content. It would explain the awesomeness of this difference. In detail, in general, upwards, downwards, inwards.
-            </h4>
+            </p>
         </div>
         <div id='differenceContent2'>
             <h2 class='title'>
                 Lovable
             </h2>
-            <h4 class='content'>
+
+            <p class='content'>
                 This is a very lovable content. It is so lovable that Batman would reveal his identity to it.
-            </h4>
+            </p>
         </div>
         <div id='differenceContent3'>
             <h2 class='title'>
                 Hero
             </h2>
-            <h4 class='content'>
+
+            <p class='content'>
                 This is a very heroic content. Its heroicness is such that I can not even explain it. Or something.
-            </h4>
+            </p>
         </div>
         <button type='button' class='right'></button>
     </div>
@@ -180,32 +201,35 @@
 
 <footer id='mainFooter'>
     <div class='wrapper'>
-        <div class='col col1of2 left'>
-            <form>
-                <label for='contactName'>
-                    <input class='ftype_contact' type='text' placeholder="Name" id='contactName'/>
-                </label>
-                <label for='contactMail'>
-                    <input class='ftype_contact'  type='text' placeholder="eMail" id='contactMail'/>
-                </label>
-                <label for='contactMessage'>
-                    <textarea class='ftype_contact' placeholder="Your message here." id='contactMessage'></textarea>
-                </label>
-                <div>
-                    <input type='submit' id='submitContact' value='SEND' />
-                </div>
-            </form>
+        <header>
+            <h2>Contact</h2>
+        </header>
+
+        <div class="col col1of2">
+            <div>
+                <p><span>Phone:</span> (+41) 627 383 099</p>
+
+                <p><span>eMail:</span> angelcj.bcn@gmail.com</p>
+
+                <p>...or use the form on your right</p>
+            </div>
         </div>
-        <div class='col col1of2 ftype_white right'>
-            <h3>
-                Or you can find me at:
-            </h3>
-            <h3>
-                blabla @gmail.com
-            </h3>
-            <h3>
-                (+34) 654 327 643
-            </h3>
+
+        <div class='col col1of2'>
+
+            <form id='formWrapper'>
+                <label for='nameForm'>Name</label>
+                <input class='input' type="text" name="name" id="nameForm" value='test'>
+
+                <label for='mailForm'>eMail</label>
+                <input class='input' type="text" name="mail" id="mailForm" value='test@test.com'>
+
+                <label for='textAreaForm'>Message</label>
+                <textarea class='input' name='message' id="textAreaForm">test</textarea>
+
+                <input type="button" name="buttonForm" value="send" id="buttonForm">
+                <div id='contactAnswerDisplayer'>Mail sent!</div>
+            </form>
         </div>
     </div>
 </footer>
@@ -240,7 +264,7 @@
         var $nav = jQuery('nav');
         var $webNavPanel = jQuery('#webNavPanel');
         var webNavPanelLinks = $webNavPanel.find('a');
-        
+
         /**
          * Initializing the awesome.
          * @type {awesomeHectorWebsite}
