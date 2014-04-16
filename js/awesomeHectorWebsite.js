@@ -131,6 +131,19 @@ function awesomeHectorWebsite(webNavElement) {
         
         jQuery(titles[0]).letterfx({"fx": "smear", "words": true, "timing": 100, onElementComplete: secondEffect});
 
+        /**
+         * Adding event listener - scroll, so when hidden stuff must be displayed, they do so!
+         */
+        jQuery(window).scroll(function () {
+            var topOfWindow = jQuery(window).scrollTop();
+            
+            $('.hiddenIfUnscrolled').each(function () {
+                var imagePos = jQuery(this).offset().top;
+                if (imagePos < topOfWindow + 400) {
+                    jQuery(this).addClass("scrolledElement");
+                }
+            });
+        });
     }
 
     function displayError(msg) {
