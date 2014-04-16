@@ -300,27 +300,27 @@ article#articleTheWorks #worksBox .work {
 }
 
 article#articleTheWorks #worksBox #sample1 {
-    background-image: url('./../images/theWorks_sample1.jpg');
+    background-image: url('./../images/theWorks_project1.png');
 }
 
 article#articleTheWorks #worksBox #sample2 {
-    background-image: url('./../images/theWorks_sample2.jpg');
+    background-image: url('./../images/theWorks_project2.png');
 }
 
 article#articleTheWorks #worksBox #sample3 {
-    background-image: url('./../images/theWorks_sample3.jpg');
+    background-image: url('./../images/theWorks_project3.png');
 }
 
 article#articleTheWorks #worksBox #sample4 {
-    background-image: url('./../images/theWorks_sample1.jpg');
+    background-image: url('./../images/theWorks_project4.png');
 }
 
 article#articleTheWorks #worksBox #sample5 {
-    background-image: url('./../images/theWorks_sample2.jpg');
+    background-image: url('./../images/theWorks_project5.png');
 }
 
 article#articleTheWorks #worksBox #sample6 {
-    background-image: url('./../images/theWorks_sample3.jpg');
+    background-image: url('./../images/theWorks_project6.png');
 }
 
 /******************************************************************************************/
@@ -344,6 +344,17 @@ article#articleTheDifference .description {
 /******************************************************************************************/
 /** CONTACT ME                                                                           **/
 /******************************************************************************************/
+
+footer#mainFooter .wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 3em 0;
+}
+
+footer#mainFooter header {
+    line-height: 3em;
+    text-align: center;
+}
 
 /** Contact inputs **/
 footer#mainFooter {}
