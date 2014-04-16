@@ -337,88 +337,9 @@ article#articleTheDifference header h2 {
     padding: .5em;
 }
 
-article#articleTheDifference .verticalDivision {
-    height: 3em;
-    width: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin: 1em auto;
+article#articleTheDifference .description { 
+    line-height: 2em;
 }
-
-article#articleTheDifference #differenceContentBox {
-    position: relative;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    overflow: hidden;
-    min-height: 10em;
-    margin-bottom: 1em;
-}
-
-article#articleTheDifference #differenceSelectionBox {
-    width: 18em; /** difference options width x 3 **/
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-article#articleTheDifference #differenceSelectionBox div {
-    float: left;
-    background: no-repeat center;
-    padding: 2em 1em;
-    width: 4em;
-    height: 4em;
-}
-
-article#articleTheDifference #differenceContentBox > button {
-    position: absolute;
-    background: no-repeat center;
-    height: 100%;
-    width: 15%;
-    float: left;
-    cursor: pointer;
-}
-
-article#articleTheDifference #differenceContentBox > div {
-    margin-left: 15%;
-    width: 70%;
-    float: left;
-}
-
-
-article#articleTheDifference #differenceContentBox button.left {
-    background-image: url('./../images/arrowLeft.png');
-}
-
-article#articleTheDifference #differenceContentBox button.right {
-    background-image: url('./../images/arrowRight.png');
-}
-
-
-article#articleTheDifference #differenceContentBox .title {
-    padding: 1em;
-    text-align: center;
-}
-
-article#articleTheDifference #differenceContentBox .content {
-    padding: 1em;
-    text-align: center;
-}
-
-article#articleTheDifference #differenceSelectionBox #differenceSelector1 {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-article#articleTheDifference #differenceSelectionBox #differenceSelector1 {
-    background-image: url('./../images/theDifference_1.png');
-}
-article#articleTheDifference #differenceSelectionBox #differenceSelector2 {
-    background-image: url('./../images/theDifference_2.png');
-}
-article#articleTheDifference #differenceSelectionBox #differenceSelector3 {
-    background-image: url('./../images/theDifference_3.png');
-}
-
-/** Hiding by default these differences. **/
-article#articleTheDifference #differenceContent2, article#articleTheDifference #differenceContent3 {
-    display: none;
-}  
 
 /******************************************************************************************/
 /** CONTACT ME                                                                           **/
@@ -568,6 +489,11 @@ a {
 /******************************************************************************************/
 /** OTHER STYLES                                                                         **/
 /******************************************************************************************/
+
+/** Selected stuff **/
+::selection {
+    background-color: #1fada3;
+}
 
 .hiddenIfUnscrolled {
     visibility: hidden;
