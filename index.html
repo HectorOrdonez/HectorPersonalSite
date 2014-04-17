@@ -2,11 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Hector, the amazing developer</title>
+
+    <title>Hector, International Web Developer</title>
 
     <link rel="stylesheet" type="text/css" href="./css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/mediaQueries.css"/>
     <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/mediaQueries.css"/>
     <link rel="stylesheet" type="text/css" href="./css/external/letterFx.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:400,100,200,300,500,600,700,800,900|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet' type='text/css'>
@@ -17,9 +18,9 @@
     The navigation panel.
     In the navigation panel are the "title" of the site at left and a button at right for phones and iPads and links to site's sections for bigger screens  
 -->
-<nav>
+<nav id='nav'>
     <div class='wrapper'>
-        <a id='siteTitle' title='Our amazing site!' href='#fakeNav'>Hector</a>
+        <a id='siteTitle' title='Our amazing site!' href='#siteTitle'>Hector</a>
 
         <div class='button'>
             <div></div>
@@ -29,38 +30,30 @@
 
         <ul>
             <li>
-                <a title='The Skills' class='link1' href='#articleTheSkills'>the skills</a>
+                <a title='The Skills' class='link1' href='#articleTheSkills'>what I know</a>
             </li>
             <li>
-                <a title='The Person' class='link1' href='#articleThePerson'>the person</a>
+                <a title='The Person' class='link1' href='#articleThePerson'>who am I</a>
             </li>
             <li>
-                <a title='The Works' class='link1' href='#articleTheWorks'>the works</a>
+                <a title='The Works' class='link1' href='#articleTheWorks'>what I do</a>
             </li>
             <li>
-                <a title='The Difference' class='link1' href='#articleTheDifference'>the difference</a>
+                <a title='The Difference' class='link1' href='#articleTheDifference'>why me</a>
             </li>
             <li>
-                <a title='Contact me' class='link1' href='#mainFooter'>contact me</a>
+                <a title='Contact me' class='link1' href='#mainFooter'>contact!</a>
             </li>
         </ul>
     </div>
 </nav>
 
 <!--
-    The fake nav.
-    It is just a white space in top of the page, as the real nav is fixed.
--->
-<div id='fakeNav'>
-
-</div>
-
-<!--
     The header.
     This differs from navigation as no top-located. Header is just the "introduction" to the site, the welcoming visuals.
 -->
-<header id='mainHeader'>
-    <div id='header-wrap'>
+<header class='section' id='mainHeader'>
+    <div class='wrapper'>
         <div>
             <h2 class='title'>
                 My name is Hector, and I am an
@@ -68,7 +61,7 @@
         </div>
         <div>
             <h1 class='title'>
-                International Web Developer
+                <strong>International Web Developer</strong>
             </h1>
         </div>
         <div>
@@ -85,9 +78,9 @@
     Here the page content. 
 -->
 
-<article id='articleTheSkills'>
+<article class='section' id='articleTheSkills'>
     <div class='wrapper'>
-        <header>
+        <header class='title'>
             <h2>
                 the skills
             </h2>
@@ -96,7 +89,7 @@
             <div class='symbol'>
                 <div class='knowledgeName'>
                     <svg width="100%" height="35%" viewBox="-1 0 1 15">
-                        <text style="fill: #FFF;" text-anchor='middle' x="0" y="13">PHP</text>
+                        <text text-anchor='middle' x="0" y="13">PHP</text>
                     </svg>
                 </div>
             </div>
@@ -192,14 +185,14 @@
     </div>
 </article>
 
-<article id='articleThePerson'>
+<article class='section' id='articleThePerson'>
     <div class='wrapper'>
-        <header>
+        <header class='title'>
             <h2>
                 the person
             </h2>
         </header>
-        <div class='description ftype_white'>
+        <div class='description'>
             <p>
                 I was born in Canarias, a little island always sunny, and lived my early life in Barcelona until I realized that the world has more to offer than Sun. Thus I lived
                 in England, Ireland and the Netherlands, enjoying their cultures and different ways of seeing the same things.
@@ -227,9 +220,9 @@
     </div>
 </article>
 
-<article id='articleTheWorks'>
+<article class='section' id='articleTheWorks'>
     <div class='wrapper'>
-        <header>
+        <header class='title'>
             <h2>
                 the works
             </h2>
@@ -258,10 +251,10 @@
     </div>
 </article>
 
-<article id='articleTheDifference'>
+<article class='section' id='articleTheDifference'>
     <div class='wrapper'>
-        <header>
-            <h2 class='ftype_title'>
+        <header class='title'>
+            <h2>
                 the difference
             </h2>
         </header>
@@ -287,9 +280,9 @@
     </div>
 </article>
 
-<footer id='mainFooter'>
+<footer class='section' id='mainFooter'>
     <div class='wrapper'>
-        <header>
+        <header class='title'>
             <h2>contact me</h2>
         </header>
 
@@ -325,22 +318,22 @@
 
 <!-- Web navigation panel - For little screens only -->
 
-<div id='webNavPanel'>
+<div class='section' id='webNavPanel'>
     <ul>
         <li>
-            <a title='The Skills' class='link1' href='#articleTheSkills'>the skills</a>
+            <a title='The Skills' class='link1' href='#articleTheSkills'>what I know</a>
         </li>
         <li>
-            <a title='The Person' class='link1' href='#articleThePerson'>the person</a>
+            <a title='The Person' class='link1' href='#articleThePerson'>who am I</a>
         </li>
         <li>
-            <a title='The Works' class='link1' href='#articleTheWorks'>the works</a>
+            <a title='The Works' class='link1' href='#articleTheWorks'>what I do</a>
         </li>
         <li>
-            <a title='The Difference' class='link1' href='#articleTheDifference'>the difference</a>
+            <a title='The Difference' class='link1' href='#articleTheDifference'>why me</a>
         </li>
         <li>
-            <a title='Contact me' class='link1' href='#mainFooter'>contact me</a>
+            <a title='Contact me' class='link1' href='#mainFooter'>contact!</a>
         </li>
     </ul>
 </div>

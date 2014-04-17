@@ -12,53 +12,57 @@
 
 /** Smart phones in screen layout **/
 @media screen and (max-width: 479px) {
+    /** Specific styles for the skills section **/
+    #articleTheSkills .knowledge .symbol {
+        margin: 1em auto;
+        width: 50%;
+        padding-bottom: 50%;
+        display: block;
+    }
+
+    #articleTheSkills .knowledge .text {
+        width: 100%;
+    }
+    
+    .section .wrapper {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
     #mainHeader {
         font-size: 30%;
     }
     
-    .col1of2 {
-        width: 100%;
-    }
+    .col1of2 {width: 100%;}
 
-    .col2of2 {
-        width: 100%;
-    }
+    .col2of2 {width: 100%;}
 
-    .col1of3 {
-        width: 100%;
-    }
+    .col1of3 {width: 100%;}
 
-    .col2of3 {
-        width: 100%;
-    }
+    .col2of3 {width: 100%;}
     
-    .col3of3 {
-        width: 100%;
-    }
+    .col3of3 {width: 100%;}
     
-    .col1of4 {
-        width: 100%;
-    }
+    .col1of4 {width: 100%;}
     
-    .col2of4 {
-        width: 100%;
-    }
+    .col2of4 {width: 100%;}
     
-    .col3of4 {
-        width: 100%;
-    }
+    .col3of4 {width: 100%;}
     
-    .col4of4 {
-        width: 100%;
-    }
+    .col4of4 {width: 100%;}
 
-    nav ul {
+    #nav ul {
         display: none;
     }
 }
 
 /** iPads and smart phones in landscape layouts **/
 @media screen and (min-width: 480px) and (max-width: 720px) {
+    .section .wrapper {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    
     #mainHeader {
         font-size: 45%;
     }
@@ -99,7 +103,7 @@
         width: 100%;
     }
 
-    nav ul {
+    #nav ul {
         display: none;
     }
 }
@@ -146,20 +150,13 @@
         width: 100%;
     }
 
-    nav .button {
+    #nav .button {
         display: none;
     }
 }
 
 /** Large screens **/
 @media screen and (min-width: 1024px) {
-    .wrapper {
-        position: relative;
-        width: 100%;
-        max-width: 64em;
-        margin: 0 auto;
-    }
-    
     .col1of2 {
         width: 50%;
     }
@@ -196,7 +193,7 @@
         width: 100%;
     }
 
-    nav .button {
+    #nav .button {
         display: none;
     }
 }

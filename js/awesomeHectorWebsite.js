@@ -134,7 +134,7 @@ function awesomeHectorWebsite() {
          * Showing off with the amazing title!
          */
         // Get the three elements
-        var titles = jQuery('#header-wrap').find('.title');
+        var titles = jQuery('#mainHeader').find('.title');
 
         var lastEffect = function () {
             setTimeout(
