@@ -9,11 +9,11 @@
 /**
  * Amazing Hector Website constructor.
  * @constructor
- *
- * @param webNavElement Expected to be jQuery object.
  */
-function awesomeHectorWebsite(webNavElement) {
+function awesomeHectorWebsite() {
+    var $nav;
     var $webNavPanel;
+    var webNavPanelLinks;
     var self = this;
 
     /*****************************************************************************************************************/
@@ -81,11 +81,13 @@ function awesomeHectorWebsite(webNavElement) {
     /*****************************************************************************************************************/
 
     try {
-        // Validate
-        validate();
+        jQuery(document).ready(function () {
+            // Validate
+            validate();
 
-        // Initializing website scripts
-        initialize()
+            // Initializing website scripts
+            initialize();
+        });
     }
     catch (error) {
         displayError(error);
@@ -96,17 +98,37 @@ function awesomeHectorWebsite(webNavElement) {
     /*****************************************************************************************************************/
 
     function validate() {
-        if (webNavElement == 'undefined') {
+        $nav = jQuery('nav');
+        $webNavPanel = jQuery('#webNavPanel');
+        webNavPanelLinks = $webNavPanel.find('a');
+
+        if ($nav == 'undefined' || !($nav instanceof jQuery)) {
+            throw 'Nav element expected to be jQuery object. Undefined instead.';
+        }
+        if ($webNavPanel == 'undefined' || !($webNavPanel instanceof jQuery)) {
             throw 'Web navigation element expected to be jQuery object. Undefined instead.';
         }
-
-        if (!(webNavElement instanceof jQuery)) {
-            throw 'webNavElement must be an instance of jQuery.';
+        if (webNavPanelLinks == 'undefined' || !(webNavPanelLinks instanceof jQuery)) {
+            throw 'Panel links expected to be jQuery objects. Undefined instead.';
         }
     }
 
+    /**
+     * Inits event listeners.
+     * Makes some links' scrolling smooth.
+     */
     function initialize() {
-        $webNavPanel = webNavElement;
+        /**
+         * The nav button triggers the showing and the closing of the web navigation panel.
+         */
+        self.toggleWebNavOnClick($nav.find('.button'));
+        self.enableSmoothScrolling($nav.find('a'));
+
+        /**
+         * When clicking any link in the web navigation panel, this panel has to close.
+         */
+        self.toggleWebNavOnClick(webNavPanelLinks);
+        self.enableSmoothScrolling(webNavPanelLinks);
 
         /**
          * Showing off with the amazing title!
@@ -115,28 +137,24 @@ function awesomeHectorWebsite(webNavElement) {
         var titles = jQuery('#header-wrap').find('.title');
 
         var lastEffect = function () {
-            console.log('last');
-            console.log(titles[2]);
             setTimeout(
-                function(){
-                    jQuery(titles[2]).letterfx({"fx": "smear", "words": true, "timing": 100});
+                function () {
+                    jQuery(titles[2]).letterfx({"fx": "smear", "words": true, "timing": 300});
                 }, 1000
             );
         };
         var secondEffect = function () {
-            console.log('second');
-            console.log(titles[1]);
-            jQuery(titles[1]).letterfx({"fx": "smear", "words": true, "timing": 100, onElementComplete: lastEffect});
+            jQuery(titles[1]).letterfx({"fx": "smear", "words": true, "timing": 300, onElementComplete: lastEffect});
         };
-        
-        jQuery(titles[0]).letterfx({"fx": "smear", "words": true, "timing": 100, onElementComplete: secondEffect});
+
+        jQuery(titles[0]).letterfx({"fx": "smear", "words": true, "timing": 300, onElementComplete: secondEffect});
 
         /**
          * Adding event listener - scroll, so when hidden stuff must be displayed, they do so!
          */
         jQuery(window).scroll(function () {
             var topOfWindow = jQuery(window).scrollTop();
-            
+
             $('.hiddenIfUnscrolled').each(function () {
                 var imagePos = jQuery(this).offset().top;
                 if (imagePos < topOfWindow + 400) {
@@ -150,3 +168,5 @@ function awesomeHectorWebsite(webNavElement) {
         console.error('Received error while initializing website: ' + msg);
     }
 }
+
+new awesomeHectorWebsite();
