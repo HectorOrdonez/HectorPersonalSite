@@ -76,6 +76,16 @@ function awesomeHectorWebsite() {
         });
     };
 
+    this.openOverlay = function($overlay)
+    {
+        $overlay.css('display', 'block');
+    };
+    
+    this.closeOverlay = function($overlay)
+    {
+        $overlay.css('display', 'none');
+    };
+    
     /*****************************************************************************************************************/
     /** Site construction                                                                                           **/
     /*****************************************************************************************************************/
@@ -161,6 +171,22 @@ function awesomeHectorWebsite() {
                     jQuery(this).addClass("scrolledElement");
                 }
             });
+        });
+
+        /**
+         * Project Overlay events
+         */
+        // Getting project elements
+        var projectList = jQuery('#worksBox').find('.project');
+
+        // Attaching event listeners
+        projectList.click(function(){
+            self.openOverlay(jQuery('#projectOverlay_' + jQuery(this).attr('id')));
+        });
+
+        // Closing project element overlay
+        jQuery('.overlayClose').click(function(){
+            self.closeOverlay(jQuery(this).closest('.projectOverlay'));
         });
     }
 

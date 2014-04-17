@@ -113,6 +113,13 @@ body:before {
 /** NAV                                                                                  **/
 /******************************************************************************************/
 
+#nav .wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 64em;
+    height: 100%;
+}
+
 #nav .button { /** Total content has 27px **/
     position: absolute;
     top: 50%;
@@ -273,7 +280,7 @@ header#mainHeader .wrapper h1{
     overflow: hidden;
 }
 
-#articleTheWorks #worksBox .work {
+#articleTheWorks #worksBox .project {
     position: relative;
     width: 75%;
     height: auto;
@@ -443,6 +450,41 @@ h2 {
 .ftype_white {
     color: #FFF;
 }
+
+/******************************************************************************************/
+/** PROJECT OVERLAYS                                                                     **/
+/******************************************************************************************/
+.projectOverlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(255, 0, 0, 0.6);
+    display: none;
+    z-index: 501;
+}
+
+.projectOverlay .content {
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    top: 50%;
+    left: 50%;
+    margin-top: -10em;
+    margin-left: -10em;
+    background-color: #0f0;
+}
+
+.projectOverlay .overlayClose {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 0;
+    right: 0;
+    background-color: #00f;
+} 
 
 /******************************************************************************************/
 /** OTHER STYLES                                                                         **/
