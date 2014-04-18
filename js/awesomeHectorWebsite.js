@@ -76,21 +76,18 @@ function awesomeHectorWebsite() {
         });
     };
 
-    this.openOverlay = function($overlay)
-    {
-        $overlay.addClass('shown');
+    this.openProject = function ($project) {
+        $project.addClass('shown');
     };
-    
-    this.closeOverlay = function($overlay)
-    {
-        $overlay.addClass('hide');
-        setTimeout(function(){
-            $overlay.removeClass('shown');
-            $overlay.removeClass('hide');
-        }
-        , 1000);
+
+    this.closeProject = function ($project) {
+        $project.addClass('hide');
+        setTimeout(function () {
+                $project.removeClass('shown');
+                $project.removeClass('hide');
+            }, 990);
     };
-    
+
     /*****************************************************************************************************************/
     /** Site construction                                                                                           **/
     /*****************************************************************************************************************/
@@ -179,19 +176,22 @@ function awesomeHectorWebsite() {
         });
 
         /**
-         * Project Overlay events
+         * Project Window events
          */
-        // Getting project elements
-        var projectList = jQuery('#worksBox').find('.project');
+        // Getting project links
+        var projectList = jQuery('#projectContainer').find('.project');
 
         // Attaching event listeners
-        projectList.click(function(){
-            self.openOverlay(jQuery('#projectOverlay_' + jQuery(this).attr('id')));
+        projectList.click(function () {
+            self.openProject(jQuery('#projectWindow_' + jQuery(this).attr('id')));
         });
 
-        // Closing project element overlay
-        jQuery('.overlayClose').click(function(){
-            self.closeOverlay(jQuery(this).closest('.projectOverlay'));
+        // Closing project window
+        jQuery('.close').click(function () {
+            self.closeProject(jQuery(this).closest('.projectWindow'));
+        });
+        jQuery('.overlay').click(function () {
+            self.closeProject(jQuery(this).closest('.projectWindow'));
         });
     }
 

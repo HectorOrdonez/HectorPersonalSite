@@ -276,11 +276,11 @@ header#mainHeader .wrapper h1{
 /** THE WORKS                                                                            **/
 /******************************************************************************************/
 
-#articleTheWorks #worksBox {
+#articleTheWorks #projectContainer {
     overflow: hidden;
 }
 
-#articleTheWorks #worksBox .project {
+#articleTheWorks #projectContainer .project {
     position: relative;
     width: 75%;
     height: auto;
@@ -292,12 +292,12 @@ header#mainHeader .wrapper h1{
     cursor: pointer;
 }
 
-#articleTheWorks #worksBox #sample1 {background-image: url('./../images/theWorks_project1.png');}
-#articleTheWorks #worksBox #sample2 {background-image: url('./../images/theWorks_project2.png');}
-#articleTheWorks #worksBox #sample3 {background-image: url('./../images/theWorks_project3.png');}
-#articleTheWorks #worksBox #sample4 {background-image: url('./../images/theWorks_project4.png');}
-#articleTheWorks #worksBox #sample5 {background-image: url('./../images/theWorks_project5.png');}
-#articleTheWorks #worksBox #sample6 {background-image: url('./../images/theWorks_project6.png');}
+#articleTheWorks #projectContainer #sample1 {background-image: url('./../images/theWorks_project1.png');}
+#articleTheWorks #projectContainer #sample2 {background-image: url('./../images/theWorks_project2.png');}
+#articleTheWorks #projectContainer #sample3 {background-image: url('./../images/theWorks_project3.png');}
+#articleTheWorks #projectContainer #sample4 {background-image: url('./../images/theWorks_project4.png');}
+#articleTheWorks #projectContainer #sample5 {background-image: url('./../images/theWorks_project5.png');}
+#articleTheWorks #projectContainer #sample6 {background-image: url('./../images/theWorks_project6.png');}
 
 /******************************************************************************************/
 /** THE DIFFERENCE                                                                       **/
@@ -452,21 +452,20 @@ h2 {
 }
 
 /******************************************************************************************/
-/** PROJECT OVERLAYS                                                                     **/
+/** PROJECT WINDOWS                                                                      **/
 /******************************************************************************************/
-.projectOverlay {
+.projectWindow {
     position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     
-    background-color: #fff;
     z-index: 501;
     display: none;
 }
 
-.projectOverlay.shown {
+.projectWindow.shown {
     animation: fadeIn 1s ease-out;
     -webkit-animation: fadeIn 1s ease-out;
     display: block;
@@ -494,7 +493,7 @@ h2 {
     }
 }
 
-.projectOverlay.hide {
+.projectWindow.hide {
     animation: fadeOut 1s ease-in;
     -webkit-animation: fadeOut 1s ease-in;
 }
@@ -520,24 +519,55 @@ h2 {
     }
 }
 
-.projectOverlay .content {
+.projectWindow .overlay {
     position: absolute;
-    width: 20em;
-    height: 20em;
-    top: 50%;
-    left: 50%;
-    margin-top: -10em;
-    margin-left: -10em;
-    background-color: #0f0;
+    top: -100%;
+    left: -100%;
+    background-color: rgba(60,60,60, 0.4);
+    width: 300%;
+    height: 300%;
 }
 
-.projectOverlay .overlayClose {
+.projectWindow .innerWindow{
+    position: relative;
+    top: 50%;
+    min-height: 30em;
+    width: 50%;
+    min-width: 20em;
+    margin: -15em auto 0 auto;
+    background-color: #fff;
+}
+
+.projectWindow header{
+
+}
+
+.projectWindow .content{
+
+}
+
+.projectWindow .content h2{
+    line-height: 3em;
+}
+
+.projectWindow .closeWrapper {
     position: absolute;
-    width: 2em;
-    height: 2em;
     top: 0;
     right: 0;
-    background-color: #00f;
+    border-style: solid;
+    border-width: 0 4em 4em ;
+    border-color: transparent #1fada3 transparent transparent;
+    width: 0;
+    height: 0;
+}
+
+.projectWindow .close {
+    position: absolute;
+    top: 0;
+    right: -1.8em;
+    font-size: 2em;
+    color: #222;
+    cursor: pointer;
 } 
 
 /******************************************************************************************/

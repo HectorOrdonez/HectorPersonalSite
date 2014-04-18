@@ -61,7 +61,7 @@
         </div>
         <div>
             <h1 class='title'>
-                <strong>International Web Developer</strong>
+                International Web Developer
             </h1>
         </div>
         <div>
@@ -227,7 +227,7 @@
             </h2>
         </header>
 
-        <div id='worksBox'>
+        <div id='projectContainer'>
             <div class='col col1of3'>
                 <div class='project' id='sample1'></div>
             </div>
@@ -339,15 +339,270 @@
 
 <!-- Project overlays -->
 
-<div class="projectOverlay" id="projectOverlay_sample1">
-    <div class='content'>
-        Project Pop up
-        
-        <div class='overlayClose'>
-            Close this!
+<div class="projectWindow" id="projectWindow_sample1">
+    <div class='overlay'></div>
+    <div class='innerWindow'>
+        <header class='title'>
+            <h2>
+                The exchange rates project
+            </h2>
+        </header>
+
+        <div class='content'>
+            <h2 class='tech'>Tech used</h2>
+
+            <p>
+                Object oriented PHP, Factory pattern, SQL, Cron Jobs, UML diagrams, MVC Kohana Framework.
+            </p>
+
+            <h2 class='problem'>The problem</h2>
+
+            <p>
+                Servers using currency values updating them asynchronously. This was causing differences in the reports.
+            </p>
+
+            <h2 class='solution'>The solution</h2>
+
+            <p>
+                I designed, documented and developed a system in which one of the servers, called Central Server, was the only one updating the currency values.
+            </p>
+        </div>
+
+        <div class='closeWrapper'>
+            <div class='close'>
+                &#10006;
+            </div>
         </div>
     </div>
+</div>
 
+<div class="projectWindow" id="projectWindow_sample2">
+    <div class='overlay'></div>
+    <div class='innerWindow'>
+        <header class='title'>
+            <h2>
+                All possibilities simulation tool
+            </h2>
+        </header>
+
+        <div class='content'>
+            <h2 class='tech'>Tech used</h2>
+
+            <p>
+                Bash scripting, Object oriented PHP, Mocking objets, MVC Kohana Framework.
+            </p>
+
+            <h2 class='problem'>The problem</h2>
+
+            <p>
+                Slot Games random testings provided estimations for total output, but do not provide with maximum payouts or exact averages.
+            </p>
+
+            <h2 class='solution'>The solution</h2>
+
+            <p>
+                I developed a simulation tool that was going through all possibilities in a game, recording bets, payouts, bonuses and features.
+            </p>
+
+            <p>
+                As there is around 312M possibilities in a Slot Game, one of the challenges was to produce a full simulation in a short time. In order to achieve this I combined
+                PHP with Bash scripting building a multi-thread simulation system, capable to reduce the simulation time cost in more than 8 times.
+            </p>
+        </div>
+
+        <div class='closeWrapper'>
+            <div class='close'>
+                &#10006;
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projectWindow" id="projectWindow_sample3">
+    <div class='overlay'></div>
+    <div class='innerWindow'>
+        <header class='title'>
+            <h2>
+                The building location register project
+            </h2>
+        </header>
+
+        <div class='content'>
+            <h2 class='tech'>Tech used</h2>
+
+            <p>
+                PHP5, SQL, JavaScript, jQuery, Google Maps Api.
+            </p>
+
+            <h2 class='problem'>The problem</h2>
+
+            <p>
+                A feature requested for a website, which had buildings registered around the world, to allow Users to set the specific building location in Google Maps.
+            </p>
+
+            <p>
+                Besides the search engine of the website now should display a Google Maps with all the buildings resulting from the search.
+            </p>
+
+            <h2 class='solution'>The solution</h2>
+
+            <p>
+                Extended the building form, showing Google Maps map and receiving User's pointed location, saving it in the database.
+            </p>
+
+            <p>
+                Extended the search engine, collecting resulting locations and building with their coordinates a map with all required Google Maps Marks.
+            </p>
+        </div>
+
+        <div class='closeWrapper'>
+            <div class='close'>
+                &#10006;
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projectWindow" id="projectWindow_sample4">
+    <div class='overlay'></div>
+    <div class='innerWindow'>
+        <header class='title'>
+            <h2>
+                The MindCraft Project
+            </h2>
+        </header>
+
+        <div class='content'>
+            <h2 class='tech'>Tech used</h2>
+
+            <p>
+                Object oriented PHP, Hecnel Framework (see HC Framework), JavaScript, jQuery, SQL, Cron Jobs, MVC and Factory design patterns.
+            </p>
+
+            <h2 class='problem'>The problem</h2>
+
+            <p>
+                As I never found an online self-development, tracking and organizing tool that satisfied my needs, I decided to develop it myself.
+            </p>
+
+            <h2 class='solution'>The solution</h2>
+
+            <p>
+                So far The MindCraft Project offers few features:
+            </p>
+            <ul>
+                <li>
+                    Users can register ideas, converting them into one-time or routine Actions
+                </li>
+                <li>
+                    Users can see a yesterday-today-tomorrow plan as a to-do list.
+                </li>
+                <li>
+                    Users can set custom reminders, send by mail.
+                </li>
+            </ul>
+            <p>
+                As this is a personal project I work on it time to time, using it specially to test new programming techniques.
+            </p>
+        </div>
+
+        <div class='closeWrapper'>
+            <div class='close'>
+                &#10006;
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projectWindow" id="projectWindow_sample5">
+    <div class='overlay'></div>
+    <div class='innerWindow'>
+        <header class='title'>
+            <h2>
+                Hecnel Framework
+            </h2>
+        </header>
+
+        <div class='content'>
+            <h2 class='tech'>Tech used</h2>
+
+            <p>
+                Object oriented PHP, MVC Model, Factory pattern, PHP ActiveRecord, Cron Jobs.
+            </p>
+
+            <h2 class='problem'>The problem</h2>
+
+            <p>
+                I wanted to improve my knowledge about PHP Frameworks: how they are built, what issues need to face, etc.
+            </p>
+
+            <h2 class='solution'>The solution</h2>
+
+            <p>
+                It turned out that the best way to learn about PHP Frameworks is to build yourself one. So I started following tutorials to build a basic framework, but I did not stop there and continued its development.
+            </p>
+            <p>
+                Finally the framework implemented all basic requirements a PHP Framework has to be used for a real scenario. The final testing has been the development of The MindCraft Project under Hecnel Framework. 
+            </p>
+        </div>
+
+        <div class='closeWrapper'>
+            <div class='close'>
+                &#10006;
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projectWindow" id="projectWindow_sample6">
+    <div class='overlay'></div>
+    <div class='innerWindow'>
+        <header class='title'>
+            <h2>
+                Data Importers and Exporters
+            </h2>
+        </header>
+
+        <div class='content'>
+            <h2 class='tech'>Tech used</h2>
+
+            <p>
+                Object oriented PHP, Kohana Framework, JSON, XML.
+            </p>
+
+            <h2 class='problem'>The problem</h2>
+
+            <p>
+                Data in different formats required to be imported to the system's database.
+            </p>
+            <p>
+                This data eventually generated reports, which had to be exported in different formats depending on User's choice.
+            </p>
+
+            <h2 class='solution'>The solution</h2>
+
+            <p>
+                Implemented several features that included the following characteristics.
+            </p>
+            <ul>
+                <li>
+                    JSON and XML Data validation. The files imported by User had to be validated before adding them to the database.
+                </li>
+                <li>
+                    Dynamic SQL queries. The imported data had to be turned dynamically into SQL constructions. 
+                </li>
+                <li>
+                    XLS and PDF generators. The export tools had to make use of the XLS and PDF generators in PHP to compile data in a readable format.
+                </li>
+            </ul>
+        </div>
+
+        <div class='closeWrapper'>
+            <div class='close'>
+                &#10006;
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- JS Libraries -->
