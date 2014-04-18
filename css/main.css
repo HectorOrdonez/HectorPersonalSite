@@ -461,9 +461,63 @@ h2 {
     top: 0;
     left: 0;
     
-    background-color: rgba(255, 0, 0, 0.6);
-    display: none;
+    background-color: #fff;
     z-index: 501;
+    display: none;
+}
+
+.projectOverlay.shown {
+    animation: fadeIn 1s ease-out;
+    -webkit-animation: fadeIn 1s ease-out;
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: translateY(-30%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.projectOverlay.hide {
+    animation: fadeOut 1s ease-in;
+    -webkit-animation: fadeOut 1s ease-in;
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(30%);
+        opacity: 0;
+    }
 }
 
 .projectOverlay .content {

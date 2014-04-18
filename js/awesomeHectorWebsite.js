@@ -78,12 +78,17 @@ function awesomeHectorWebsite() {
 
     this.openOverlay = function($overlay)
     {
-        $overlay.css('display', 'block');
+        $overlay.addClass('shown');
     };
     
     this.closeOverlay = function($overlay)
     {
-        $overlay.css('display', 'none');
+        $overlay.addClass('hide');
+        setTimeout(function(){
+            $overlay.removeClass('shown');
+            $overlay.removeClass('hide');
+        }
+        , 1000);
     };
     
     /*****************************************************************************************************************/
