@@ -536,6 +536,9 @@ h2 {
     min-width: 20em;
     margin: -15em auto 0 auto;
     background-color: #fff;
+    -webkit-box-shadow:  0em 1em 2em 1em rgba(0,0,0,0.2);
+        -moz-box-shadow: 0em 1em 2em 1em rgba(0,0,0,0.2);
+            box-shadow:  0em 1em 2em 1em rgba(0,0,0,0.2);
 }
 
 .projectWindow header{
@@ -543,7 +546,7 @@ h2 {
 }
 
 .projectWindow .content{
-
+    padding: 0.5em;
 }
 
 .projectWindow .content h2{
