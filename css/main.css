@@ -86,8 +86,8 @@ body:before {
 }
 
 /** The Person **/
-#articleThePerson {
-    background: url('./../images/thePerson.png') fixed bottom right;
+.articleThePerson {
+    background: fixed bottom right;
     background-size: cover;
 }
 
@@ -263,13 +263,26 @@ header#mainHeader .wrapper h1{
 /** THE PERSON                                                                           **/
 /******************************************************************************************/
 
-#articleThePerson .description {
+#articleThePerson1 { background-image: url('./../images/aboutMe1.jpg'); }
+#articleThePerson2 { background-image: url('./../images/aboutMe2.jpg'); }
+
+.articleThePerson {
+    height: 100%;
+}
+
+.articleThePerson .image#teamWorker { background-image: url('./../images/about/happyTogether.png'); }
+.articleThePerson .image#casualStyle { background-image: url('./../images/about/casualStyle.png'); }
+.articleThePerson .image#speakMyMind { background-image: url('./../images/about/speakMyMind.png'); }
+.articleThePerson .image#iLoveGuitar { background-image: url('./../images/about/iLoveGuitar.png'); }
+.articleThePerson .image#iLoveTravelling { background-image: url('./../images/about/iLoveTravelling.png'); }
+.articleThePerson .image#iLoveStrategyGames { background-image: url('./../images/about/strategyGamesLover.png'); }
+
+.articleThePerson .image {
     position: relative;
-    left: 15%;
-    padding: 10% 0;
-    line-height: 2em;
-    width: 50%;
-    text-align: justify;
+    display: block;
+    width: 20%;
+    padding-bottom: 20%;
+    background-size: 100%;
 }
 
 /******************************************************************************************/
