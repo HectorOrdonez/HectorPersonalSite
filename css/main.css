@@ -75,7 +75,7 @@ body:before {
 /** Header **/
 #mainHeader {
     height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
-    background-image: url('./../images/fondo.jpg');
+    background-image: url('../images/header_background.jpg');
     background-size: cover;
     text-align: center;
 }
@@ -99,7 +99,7 @@ body:before {
 /** The Difference **/
 #articleTheDifference {
     min-height: 75%;
-    background-image: url('./../images/cartographer_1.jpg');
+    background-image: url('../images/theDifference_background.jpg');
 }
 
 /** Contact me! **/
@@ -244,7 +244,7 @@ header#mainHeader .wrapper h1{
     margin: 2em;
     padding-bottom: 20%;
     vertical-align: middle;
-    background-image: url('./../images/hexagon.png');
+    background-image: url('../images/theSkills_hexagon.png');
     background-size: 100%;
 }
 
@@ -263,27 +263,79 @@ header#mainHeader .wrapper h1{
 /** THE PERSON                                                                           **/
 /******************************************************************************************/
 
-#articleThePerson1 { background-image: url('./../images/aboutMe1.jpg'); }
-#articleThePerson2 { background-image: url('./../images/aboutMe2.jpg'); }
+#articleThePerson1 { background-image: url('../images/thePerson_background1.jpg'); }
+#articleThePerson2 { background-image: url('../images/thePerson_background2.jpg'); }
 
 .articleThePerson {
-    height: 100%;
+    /** min-height: 100%; **/
+}
+.articleThePerson:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.8);
+}
+.articleThePerson .wrapper {
+    position: relative;
+}
+.articleThePerson .traits{
+    position: relative;
+    overflow: hidden;
+    margin: 3em 0;
 }
 
-.articleThePerson .image#teamWorker { background-image: url('./../images/about/happyTogether.png'); }
-.articleThePerson .image#casualStyle { background-image: url('./../images/about/casualStyle.png'); }
-.articleThePerson .image#speakMyMind { background-image: url('./../images/about/speakMyMind.png'); }
-.articleThePerson .image#iLoveGuitar { background-image: url('./../images/about/iLoveGuitar.png'); }
-.articleThePerson .image#iLoveTravelling { background-image: url('./../images/about/iLoveTravelling.png'); }
-.articleThePerson .image#iLoveStrategyGames { background-image: url('./../images/about/strategyGamesLover.png'); }
+.articleThePerson .content{
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+.articleThePerson .content p{
+    margin: 1em 0;
+}
+
+.articleThePerson .personalTrait {
+    text-align: center;
+}
+
 
 .articleThePerson .image {
     position: relative;
     display: block;
-    width: 20%;
-    padding-bottom: 20%;
+    width: 30%;
+    padding-bottom: 30%;
     background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
+    
+.articleThePerson .image#personalTraitProactive {
+    background-image: url('../images/thePerson_proactive.png');
+}
+
+.articleThePerson .image#personalTraitGoalFocused {
+    background-image: url('../images/thePerson_goalFocused.png');
+}
+
+.articleThePerson .image#personalTraitAttentionToDetail {
+    background-image: url('../images/thePerson_attentionToDetail.png');
+}
+
+.articleThePerson .image#personalTraitGuitarLover {
+    background-image: url('../images/thePerson_guitarLover.png');
+}
+
+.articleThePerson .image#personalTraitTravellingLover {
+    background-image: url('../images/thePerson_travellingLover.png');
+}
+
+.articleThePerson .image#personalTraitStrategyGamesLover {
+    background-image: url('../images/thePerson_strategyGamesLover.png');
+}
+
 
 /******************************************************************************************/
 /** THE WORKS                                                                            **/
@@ -409,6 +461,7 @@ header#mainHeader .wrapper h1{
     background-color: #fff;
     margin-bottom: 1px;
     display: block;
+    text-align: center;
 }
 
 #webNavPanel ul li:after {
