@@ -21,8 +21,6 @@
 /** Body **/
 body {
     font-size: 100%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
     background-color: #FFF;
 }
 
@@ -42,11 +40,6 @@ body {
 .section .wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
-}
-
-header.title {
-    line-height: 3em;
-    text-align: center;
 }
 
 /******************************************************************************************/
@@ -105,7 +98,6 @@ body:before {
 /** Contact me! **/
 #mainFooter {
     background-color: #222;
-    color: #FFF;
     overflow: hidden;
 }
 
@@ -187,15 +179,7 @@ header#mainHeader:before {
     margin-right: 0.25em;
 }
 
-header#mainHeader .wrapper h2{
-    font-size: 2.5em;
-    font-weight: 300;
-    line-height: 2em;
-}
-
 header#mainHeader .wrapper h1{
-    font-size: 4em;
-    line-height: 2em;
     padding: 0 0.5em;
 }
 
@@ -225,17 +209,12 @@ header#mainHeader .wrapper h1{
     display: inline-block;
     vertical-align: middle;
     width: calc(80% - 5em);
-    line-height: 2em;
 }
 
 #articleTheSkills .masterOfPHP .symbol {background-color: #222;}
 #articleTheSkills .masterOfSQL .symbol {background-color: #868686;}
 #articleTheSkills .masterOfCSS .symbol {background-color: #1fada3;}
 #articleTheSkills .masterOfJS  .symbol {background-color: #222;}
-
-#articleTheSkills .symbol text {
-    fill: #fff;
-}
 
 #articleTheSkills .knowledge .symbol {
     position: relative;
@@ -252,7 +231,6 @@ header#mainHeader .wrapper h1{
     position: absolute;
     left: 0;
     right: 0;
-    text-align: center;
     width: 100%;
     height: 100%;
     top: 50%;
@@ -288,11 +266,11 @@ header#mainHeader .wrapper h1{
 }
 
 .articleThePerson .content{
-    width: 100%;
+    width: calc(100% - 1em);
+    padding: 0 .5em;
     margin: 0 auto;
-    line-height: 2em;
-    font-size: 1.5em;
 }
+
 .articleThePerson .content p{
     margin: 1em 0;
 }
@@ -373,8 +351,9 @@ header#mainHeader .wrapper h1{
     padding: .5em;
 }
 
-#articleTheDifference .description { 
-    line-height: 2em;
+#articleTheDifference .content {
+    width: calc(100% - 1em);
+    padding: 0 0.5em;
 }
 
 /******************************************************************************************/
@@ -387,22 +366,16 @@ header#mainHeader .wrapper h1{
     overflow: hidden;
 }
 
-#mainFooter p {
-    line-height: 2em;
-}
-
 #mainFooter span {
     font-weight: 600;
 }
 
 #mainFooter #formWrapper .input {
+    display: block;
     border: 2px solid #FFFFFF;
     padding: 0.25em;
     margin: 0.3em 0;
     width: 90%;
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    line-height: 1.5em;
 }
 
 #mainFooter #formWrapper .input:focus {
@@ -417,9 +390,7 @@ header#mainHeader .wrapper h1{
 #mainFooter #buttonForm {
     transition: opacity 0.5s ease;
     background-color: #1fada3;
-    color: #fff;
     padding: 0.6em 0.9em;
-    font-size: 0.8em;
     text-transform: uppercase;
     display: inline;
     margin-top: 0.6em;
@@ -437,6 +408,11 @@ header#mainHeader .wrapper h1{
     display: inline;
 }
 
+#mainFooter .wrapper .content {
+    position: relative;
+    width: calc(100% - 1em);
+    padding: 0 0.5em;
+}
 /******************************************************************************************/
 /** NAVIGATION PANEL                                                                     **/
 /******************************************************************************************/
@@ -479,42 +455,6 @@ header#mainHeader .wrapper h1{
     display: block;
     line-height: 3em;
     padding: 0 1em;
-}
-
-/******************************************************************************************/
-/** FONT STYLES                                                                          **/
-/******************************************************************************************/
-
-#siteTitle {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 1.8em;
-    color:#1fada3;
-}
-
-h1 {
-    font-weight: 600;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-}
-
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
-.link1 {
-    color: #000;
-    transition: background 1s;
-}
-
-.link1:hover {
-    background-color: rgba(31, 173, 163, 0.6);
-}
-
-.ftype_white {
-    color: #FFF;
 }
 
 /******************************************************************************************/
@@ -687,4 +627,77 @@ h2 {
         opacity: 1;
         margin-left: 0;
     }
+}
+
+
+/******************************************************************************************/
+/** FONT STYLES                                                                          **/
+/******************************************************************************************/
+
+.ftype_navTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    color:#1fada3;
+    text-decoration: none;
+}
+
+.ftype_navLink {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #222;
+    transition: background 1s;
+    text-decoration: none;
+}
+
+.ftype_navLink:hover {
+    background-color: rgba(31, 173, 163, 0.6);
+}
+
+.ftype_mainTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 2em;
+    font-size: 4em;
+}
+
+.ftype_mainSubtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 2em;
+    font-size: 2.5em;
+}
+
+.ftype_sectionTitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 3em;
+    text-align: center;
+}
+
+.ftype_sectionContent {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.ftype_svg {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    fill: #fff;
+    text-anchor: middle;
+}
+
+.ftype_input {
+    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;    
+}
+
+.ftype_sectionContentDark {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    color: #fff;
 }
