@@ -254,7 +254,7 @@ header#mainHeader .wrapper h1{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.4);
 }
 .articleThePerson .wrapper {
     position: relative;
@@ -284,10 +284,12 @@ header#mainHeader .wrapper h1{
     position: relative;
     display: block;
     width: 30%;
-    padding-bottom: 30%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: 0 auto;
+    background: center no-repeat #fff;
+    background-size: 70%;
+    margin: 1em auto;
+    padding: 1em 1em calc(30% + 1em) 1em;
+    border-radius: 50em;
+    box-shadow: 0 0 1em 0 #222;
 }
     
 .articleThePerson .image#personalTraitProactive {
@@ -346,11 +348,6 @@ header#mainHeader .wrapper h1{
 /** THE DIFFERENCE                                                                       **/
 /******************************************************************************************/
 
-#articleTheDifference header h2 {
-    display: inline;
-    padding: .5em;
-}
-
 #articleTheDifference .content {
     width: calc(100% - 1em);
     padding: 0 0.5em;
@@ -366,8 +363,25 @@ header#mainHeader .wrapper h1{
     overflow: hidden;
 }
 
-#mainFooter span {
-    font-weight: 600;
+#mainFooter p {
+    text-align: center;
+}
+#mainFooter .icon {
+    background: center no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 3em;
+    width: 3em;
+    vertical-align: middle;
+    margin: 1em;
+}
+
+#mainFooter .icon.phone{
+    background-image: url('./../images/contact_phone.png');
+}
+
+#mainFooter .icon.mail {
+    background-image: url('./../images/contact_mail.png');
 }
 
 #mainFooter #formWrapper .input {
@@ -390,7 +404,7 @@ header#mainHeader .wrapper h1{
 #mainFooter #buttonForm {
     transition: opacity 0.5s ease;
     background-color: #1fada3;
-    padding: 0.6em 0.9em;
+    padding: 0.2em 0.8em;
     text-transform: uppercase;
     display: inline;
     margin-top: 0.6em;
@@ -555,10 +569,6 @@ header#mainHeader .wrapper h1{
     padding: 0.5em;
 }
 
-.projectWindow .content h2{
-    line-height: 3em;
-}
-
 .projectWindow .closeWrapper {
     position: absolute;
     top: 0;
@@ -695,9 +705,23 @@ header#mainHeader .wrapper h1{
     line-height: 1.5em;    
 }
 
+.ftype_sectionTitleDark {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 3em;
+    text-align: center;
+    color: #fff;
+}
+
 .ftype_sectionContentDark {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     line-height: 2em;
     color: #fff;
+}
+.ftype_userMessage {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #1fada3;
 }
