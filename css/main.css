@@ -75,6 +75,7 @@ body:before {
 
 /** The Skills **/
 #articleTheSkills {
+    overflow: hidden;
     background-color: #FFF;
 }
 
@@ -91,7 +92,6 @@ body:before {
 
 /** The Difference **/
 #articleTheDifference {
-    min-height: 75%;
     background-image: url('../images/theDifference_background.jpg');
 }
 
@@ -208,6 +208,7 @@ header#mainHeader .wrapper h1{
 #articleTheSkills .knowledge .text {
     display: inline-block;
     vertical-align: middle;
+    text-align: justify;
     width: calc(80% - 5em);
 }
 
@@ -350,7 +351,36 @@ header#mainHeader .wrapper h1{
 
 #articleTheDifference .content {
     width: calc(100% - 1em);
+    overflow: hidden;
     padding: 0 0.5em;
+}
+
+article#articleTheDifference header {
+    padding-top: 1em;
+    line-height: 3em;
+    text-align: center;
+}
+
+article#articleTheDifference .iconWrapper {
+    display: table;
+    background-color: #000;
+    width: 8em;
+    height: 8em;
+    border-radius: 50em;
+    text-align: center;
+    margin: .5em auto;
+    box-shadow: 0 0 1em 0 #868686;
+}
+
+article#articleTheDifference i {
+    display: table-cell;
+    color: #fff;
+    vertical-align: middle;
+}
+
+article#articleTheDifference .ftype_subSectionContent {
+    padding: 0 1em;
+    text-align: justify;
 }
 
 /******************************************************************************************/
@@ -363,26 +393,21 @@ header#mainHeader .wrapper h1{
     overflow: hidden;
 }
 
-#mainFooter p {
-    text-align: center;
+#mainFooter .col2of4:first-child {
+    margin-bottom: 2em;
 }
 #mainFooter .icon {
     background: center no-repeat;
     background-size: 100%;
     display: inline-block;
-    height: 3em;
-    width: 3em;
+    height: 1.5em;
+    width: 1.5em;
     vertical-align: middle;
-    margin: 1em;
+    margin: 1em 1em 1em 0;
 }
 
-#mainFooter .icon.phone{
-    background-image: url('./../images/contact_phone.png');
-}
-
-#mainFooter .icon.mail {
-    background-image: url('./../images/contact_mail.png');
-}
+#mainFooter .icon.phone{ background-image: url('./../images/contact_phone.png'); }
+#mainFooter .icon.mail { background-image: url('./../images/contact_mail.png'); }
 
 #mainFooter #formWrapper .input {
     display: block;
@@ -424,8 +449,8 @@ header#mainHeader .wrapper h1{
 
 #mainFooter .wrapper .content {
     position: relative;
-    width: calc(100% - 1em);
-    padding: 0 0.5em;
+    width: calc(100% - 6em);
+    padding: 0 3em;
 }
 /******************************************************************************************/
 /** NAVIGATION PANEL                                                                     **/
@@ -493,7 +518,7 @@ header#mainHeader .wrapper h1{
 
 @keyframes fadeIn {
     0% {
-        transform: translateY(-30%);
+        transform: translateY(-5%);
         opacity: 0;
     }
     100% {
@@ -504,7 +529,7 @@ header#mainHeader .wrapper h1{
 
 @-webkit-keyframes fadeIn {
     0% {
-        -webkit-transform: translateY(-30%);
+        -webkit-transform: translateY(-5%);
         opacity: 0;
     }
     100% {
@@ -524,7 +549,7 @@ header#mainHeader .wrapper h1{
         opacity: 1;
     }
     100% {
-        transform: translateY(30%);
+        transform: translateY(5%);
         opacity: 0;
     }
 }
@@ -534,7 +559,7 @@ header#mainHeader .wrapper h1{
         opacity: 1;
     }
     100% {
-        -webkit-transform: translateY(30%);
+        -webkit-transform: translateY(5%);
         opacity: 0;
     }
 }
@@ -682,16 +707,36 @@ header#mainHeader .wrapper h1{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 2em;
-    line-height: 3em;
+    line-height: 2em;
     text-align: center;
 }
 
 .ftype_sectionContent {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    line-height: 2em;
+    line-height: 1.2em;
     font-size: 1.2em;
 }
+
+.ftype_subSectionTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: center;
+    letter-spacing: .8px;
+    color: #fff;
+}
+
+.ftype_subSectionContent {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    letter-spacing: .6px;
+    color: #fff;
+}
+
 .ftype_svg {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -709,7 +754,7 @@ header#mainHeader .wrapper h1{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 2em;
-    line-height: 3em;
+    line-height: 2em;
     text-align: center;
     color: #fff;
 }
@@ -717,11 +762,15 @@ header#mainHeader .wrapper h1{
 .ftype_sectionContentDark {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-    line-height: 2em;
+    line-height: 1em;
     color: #fff;
 }
 .ftype_userMessage {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #1fada3;
+}
+
+.fstyle_italic {
+    font-style: italic;
 }
