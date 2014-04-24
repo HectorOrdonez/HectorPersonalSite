@@ -68,7 +68,7 @@ body:before {
 /** Header **/
 #mainHeader {
     height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
-    background-image: url('../images/header_background.jpg');
+    background: url('../images/header_background.jpg') fixed;
     background-size: cover;
     text-align: center;
 }
@@ -81,7 +81,7 @@ body:before {
 
 /** The Person **/
 .articleThePerson {
-    background: fixed bottom right;
+    background: fixed center;
     background-size: cover;
 }
 
@@ -92,7 +92,7 @@ body:before {
 
 /** The Difference **/
 #articleTheDifference {
-    background-image: url('../images/theDifference_background.jpg');
+    background: url('../images/theDifference_background.jpg') fixed;
 }
 
 /** Contact me! **/
@@ -212,7 +212,7 @@ header#mainHeader .wrapper h1{
 #articleTheSkills .knowledge .text {
     display: inline-block;
     vertical-align: middle;
-    text-align: justify;
+    text-align: left;
     width: calc(80% - 5em);
 }
 
@@ -250,8 +250,9 @@ header#mainHeader .wrapper h1{
 #articleThePerson2 { background-image: url('../images/thePerson_background2.jpg'); }
 
 .articleThePerson {
-    /** min-height: 100%; **/
+    min-height: 50%;
 }
+
 .articleThePerson:before {
     content: '';
     position: absolute;
@@ -290,35 +291,35 @@ header#mainHeader .wrapper h1{
     display: block;
     width: 30%;
     background: center no-repeat #fff;
-    background-size: 70%;
+    background-size: cover;
     margin: 1em auto;
     padding: 1em 1em calc(30% + 1em) 1em;
     border-radius: 50em;
     box-shadow: 0 0 1em 0 #222;
 }
     
-.articleThePerson .image#personalTraitProactive {
-    background-image: url('../images/thePerson_proactive.png');
+.articleThePerson .image#personalTraitMusician {
+    background-image: url('../images/thePerson_musician.png');
+}
+
+.articleThePerson .image#personalTraitTraveller {
+    background-image: url('../images/thePerson_traveller.png');
+}
+
+.articleThePerson .image#personalTraitBalanceLife {
+    background-image: url('../images/thePerson_balanceLife.png');
+}
+
+.articleThePerson .image#personalTraitAttentionToDetails {
+    background-image: url('../images/thePerson_attentionToDetails.png');
+}
+
+.articleThePerson .image#personalTraitPuzzleSolver {
+    background-image: url('../images/thePerson_puzzleSolver.png');
 }
 
 .articleThePerson .image#personalTraitGoalFocused {
     background-image: url('../images/thePerson_goalFocused.png');
-}
-
-.articleThePerson .image#personalTraitAttentionToDetail {
-    background-image: url('../images/thePerson_attentionToDetail.png');
-}
-
-.articleThePerson .image#personalTraitGuitarLover {
-    background-image: url('../images/thePerson_guitarLover.png');
-}
-
-.articleThePerson .image#personalTraitTravellingLover {
-    background-image: url('../images/thePerson_travellingLover.png');
-}
-
-.articleThePerson .image#personalTraitStrategyGamesLover {
-    background-image: url('../images/thePerson_strategyGamesLover.png');
 }
 
 
@@ -376,11 +377,16 @@ article#articleTheDifference .iconWrapper {
     box-shadow: 0 0 1em 0 #868686;
 }
 
-article#articleTheDifference i {
-    display: table-cell;
-    color: #fff;
-    vertical-align: middle;
-}
+article#articleTheDifference .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+} 
+
+article#articleTheDifference #theDifference_enthusiast .image { background-image: url('../images/theDifference_enthusiast.png'); }
+article#articleTheDifference #theDifference_adventurer .image { background-image: url('../images/theDifference_adventurer.png'); }
+article#articleTheDifference #theDifference_proactive .image { background-image: url('../images/theDifference_proactive.png'); }
 
 article#articleTheDifference .ftype_subSectionContent {
     padding: 0 1em;
