@@ -87,6 +87,11 @@ function awesomeHectorWebsite() {
                 $project.removeClass('hide');
             }, 990);
     };
+    
+    this.contactMessage = function (message) {
+        var $displayer = jQuery('#contactAnswerDisplayer');
+        $displayer.html(message);
+    };
 
     /*****************************************************************************************************************/
     /** Site construction                                                                                           **/
@@ -192,6 +197,49 @@ function awesomeHectorWebsite() {
         });
         jQuery('.overlay').click(function () {
             self.closeProject(jQuery(this).closest('.projectWindow'));
+        });
+        
+        // Contact form submission
+        jQuery('#buttonForm').click(function(){
+            // Getting parameters
+            var name = jQuery('#nameInput').val();
+            var mail = jQuery('#mailInput').val();
+            var message = jQuery('#messageInput').val();
+            
+            // Basic validations
+            if (
+                name == '' ||
+                mail == '' ||
+                message == ''
+                )
+            {
+                self.contactMessage('Please specify a name, a mail and a message.');
+                return;
+            }
+            
+            // Sending to server
+            jQuery.ajax({
+                type: 'post',
+                url: 'sendMail.php',
+                data: {
+                    name: name,
+                    mail: mail,
+                    message: message
+                }
+            }).done(function (rawResponse) {
+                    try {
+                        var response = jQuery.parseJSON(rawResponse);
+                    } catch (err)
+                    {
+                        self.contactMessage('Oh, this is embarrassing. Failed to send the message. Can you try by mail?');
+                        return;
+                    }
+                    self.contactMessage(response[1]);
+                }
+            ).fail(function (response) {
+                    self.contactMessage(response.statusText);
+                }
+            );
         });
     }
 
