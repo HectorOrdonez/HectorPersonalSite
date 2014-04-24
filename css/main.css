@@ -577,17 +577,34 @@ article#articleTheDifference .ftype_subSectionContent {
     height: 300%;
 }
 
+.projectWindow:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+.projectWindow .innerWindowWrapper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
 .projectWindow .innerWindow{
     position: relative;
-    top: 50%;
-    min-height: 30em;
-    width: 50%;
-    min-width: 20em;
-    margin: -15em auto 0 auto;
     background-color: #fff;
     -webkit-box-shadow:  0em 1em 2em 1em rgba(0,0,0,0.2);
         -moz-box-shadow: 0em 1em 2em 1em rgba(0,0,0,0.2);
             box-shadow:  0em 1em 2em 1em rgba(0,0,0,0.2);
+    padding: 1em;
+    width: calc(100% - 2em);
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.projectWindow .innerWindow h3{
+    line-height: 2em;
 }
 
 .projectWindow header{
