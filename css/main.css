@@ -205,6 +205,10 @@ header#mainHeader .wrapper h1{
     box-shadow: 0 0 25px 1px #000000;
 }
 
+#articleTheSkills .knowledge ul {
+    list-style: square inside;
+}
+
 #articleTheSkills .knowledge .text {
     display: inline-block;
     vertical-align: middle;
