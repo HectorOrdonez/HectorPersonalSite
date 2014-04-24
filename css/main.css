@@ -283,6 +283,7 @@ header#mainHeader .wrapper h1{
 
 .articleThePerson .personalTrait {
     text-align: center;
+    margin-bottom: 1.5em;
 }
 
 
@@ -331,6 +332,10 @@ header#mainHeader .wrapper h1{
     overflow: hidden;
 }
 
+#articleTheWorks header {
+    margin-bottom: 2.5em;
+}
+ 
 #articleTheWorks #projectContainer .project {
     position: relative;
     width: 75%;
@@ -361,9 +366,9 @@ header#mainHeader .wrapper h1{
 }
 
 article#articleTheDifference header {
-    padding-top: 1em;
     line-height: 3em;
     text-align: center;
+    margin-bottom: 2.5em;
 }
 
 article#articleTheDifference .iconWrapper {
@@ -374,7 +379,7 @@ article#articleTheDifference .iconWrapper {
     border-radius: 50em;
     text-align: center;
     margin: .5em auto;
-    box-shadow: 0 0 1em 0 #868686;
+    box-shadow: 0 0 1em 0 #222;
 }
 
 article#articleTheDifference .image {
@@ -390,7 +395,7 @@ article#articleTheDifference #theDifference_proactive .image { background-image:
 
 article#articleTheDifference .ftype_subSectionContent {
     padding: 0 1em;
-    text-align: justify;
+    text-align: center;
 }
 
 /******************************************************************************************/
@@ -627,7 +632,7 @@ article#articleTheDifference .ftype_subSectionContent {
     right: 0;
     border-style: solid;
     border-width: 0 4em 4em ;
-    border-color: transparent #1fada3 transparent transparent;
+    border-color: transparent #222 transparent transparent;
     width: 0;
     height: 0;
 }
@@ -756,12 +761,30 @@ article#articleTheDifference .ftype_subSectionContent {
 }
 
 .ftype_subSectionContent {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-style: italic;
+}
+
+.ftype_traitTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: #222;
+    line-height: 1.5em;
+}
+
+.ftype_traitContent {
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 1.2em;
     font-size: 1.2em;
-    letter-spacing: .6px;
-    color: #fff;
+    color: #222;
+    font-style: italic;
 }
 
 .ftype_svg {
@@ -772,7 +795,7 @@ article#articleTheDifference .ftype_subSectionContent {
 }
 
 .ftype_input {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-size: 1em;
     line-height: 1.5em;    
 }
@@ -796,8 +819,4 @@ article#articleTheDifference .ftype_subSectionContent {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #1fada3;
-}
-
-.fstyle_italic {
-    font-style: italic;
 }
