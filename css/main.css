@@ -246,14 +246,20 @@ header#mainHeader .wrapper h1{
 /** THE PERSON                                                                           **/
 /******************************************************************************************/
 
-#articleThePerson1 { background-image: url('../images/thePerson_background1.jpg'); }
-#articleThePerson2 { background-image: url('../images/thePerson_background2.jpg'); }
+#articleThePerson1 { 
+    background-image: url('../images/thePerson_background1.jpg');
+    color: #222;
+}
+#articleThePerson2 {
+    background-image: url('../images/thePerson_background2.jpg');
+    color: #fff;
+}
 
 .articleThePerson {
     min-height: 50%;
 }
 
-.articleThePerson:before {
+#articleThePerson1:before {
     content: '';
     position: absolute;
     top: 0;
@@ -262,6 +268,17 @@ header#mainHeader .wrapper h1{
     bottom: 0;
     background-color: rgba(255,255,255,0.4);
 }
+
+#articleThePerson2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
 .articleThePerson .wrapper {
     position: relative;
 }
@@ -372,7 +389,6 @@ article#articleTheDifference header {
 }
 
 article#articleTheDifference .iconWrapper {
-    display: table;
     background-color: #000;
     width: 8em;
     height: 8em;
@@ -599,7 +615,7 @@ article#articleTheDifference .ftype_subSectionContent {
 .projectWindow .innerWindowWrapper {
     display: inline-block;
     vertical-align: middle;
-    width: 100%;
+    width: 99%;
 }
 
 .projectWindow .innerWindow{
@@ -612,6 +628,7 @@ article#articleTheDifference .ftype_subSectionContent {
     width: calc(100% - 2em);
     max-width: 50em;
     margin: 0 auto;
+    color: #222;
 }
 
 .projectWindow .innerWindow h3{
@@ -774,7 +791,6 @@ article#articleTheDifference .ftype_subSectionContent {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 1.4em;
-    color: #222;
     line-height: 1.5em;
 }
 
@@ -783,7 +799,6 @@ article#articleTheDifference .ftype_subSectionContent {
     font-weight: 400;
     line-height: 1.2em;
     font-size: 1.2em;
-    color: #222;
     font-style: italic;
 }
 

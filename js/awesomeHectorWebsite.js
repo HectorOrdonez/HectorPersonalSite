@@ -83,11 +83,11 @@ function awesomeHectorWebsite() {
     this.closeProject = function ($project) {
         $project.addClass('hide');
         setTimeout(function () {
-                $project.removeClass('shown');
-                $project.removeClass('hide');
-            }, 990);
+            $project.removeClass('shown');
+            $project.removeClass('hide');
+        }, 990);
     };
-    
+
     this.contactMessage = function (message) {
         var $displayer = jQuery('#contactAnswerDisplayer');
         $displayer.html(message);
@@ -198,25 +198,24 @@ function awesomeHectorWebsite() {
         jQuery('.overlay').click(function () {
             self.closeProject(jQuery(this).closest('.projectWindow'));
         });
-        
+
         // Contact form submission
-        jQuery('#buttonForm').click(function(){
+        jQuery('#buttonForm').click(function () {
             // Getting parameters
             var name = jQuery('#nameInput').val();
             var mail = jQuery('#mailInput').val();
             var message = jQuery('#messageInput').val();
-            
+
             // Basic validations
             if (
                 name == '' ||
-                mail == '' ||
-                message == ''
-                )
-            {
+                    mail == '' ||
+                    message == ''
+                ) {
                 self.contactMessage('Please specify a name, a mail and a message.');
                 return;
             }
-            
+
             // Sending to server
             jQuery.ajax({
                 type: 'post',
@@ -229,8 +228,7 @@ function awesomeHectorWebsite() {
             }).done(function (rawResponse) {
                     try {
                         var response = jQuery.parseJSON(rawResponse);
-                    } catch (err)
-                    {
+                    } catch (err) {
                         self.contactMessage('Oh, this is embarrassing. Failed to send the message. Can you try by mail?');
                         return;
                     }
