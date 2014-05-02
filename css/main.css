@@ -439,6 +439,7 @@ article#articleTheDifference .ftype_subSectionContent {
 
 #mainFooter .icon.phone{ background-image: url('./../images/contact_phone.png'); }
 #mainFooter .icon.mail { background-image: url('./../images/contact_mail.png'); }
+#mainFooter .icon.download { background-image: url('./../images/contact_download.png'); }
 
 #mainFooter #formWrapper .input {
     display: block;
