@@ -27,15 +27,15 @@ Hector.
           content='My name is Hector and I am a Web Developer, expert in PHP, SQL, JS and CSS. In this site I hope to illustrate my skills and features while making you have a nice experience with the visuals and design.'>
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" type="text/css" href="./css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/mediaQueries.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/external/letterFx.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/online-cv/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/online-cv/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/online-cv/css/mediaQueries.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/online-cv/css/external/letterFx.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic|Raleway:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href='./images/me.png' type="image/icon">
-    <link rel="icon" href='./images/me.png' type="image/icon">
+    <link rel="shortcut icon" href="{{ Config::get('app.url') }}/online-cv/images/me.png" type="image/icon">
+    <link rel="icon" href="{{ Config::get('app.url') }}/online-cv/images/me.png" type="image/icon">
 </head>
 <body>
 
@@ -370,7 +370,7 @@ Hector.
                     <p class='ftype_sectionContentDark'><span class='icon mail'></span> hjavierog@gmail.com</p>
                     
                     <p>
-                        <a class='ftype_sectionContentDark' title='Download my resume' href="./downloads/HectorOrdonez-ENG.pdf">
+                        <a class='ftype_sectionContentDark' title='Download my resume' href="{{ Config::get('app.url') }}/online-cv/downloads/HectorOrdonez-ENG.pdf">
                             <span class='icon download'></span>download my resume
                         </a>
                     </p>
@@ -673,9 +673,12 @@ Hector.
 </div>
 
 <!-- JS Libraries -->
-<script type="text/javascript" src='./js/external/jquery-1.11.0.min.js'></script>
-<script type="text/javascript" src='./js/awesomeHectorWebsite.js'></script>
-<script src="js/external/letterFx.js" type="text/javascript"></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/online-cv/js/external/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/online-cv/js/awesomeHectorWebsite.js"></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/online-cv/js/external/letterFx.js" ></script>
+
+@if (getenv('APP_ENV') == 'production')
+
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -683,7 +686,7 @@ Hector.
             (i[r].q = i[r].q || []).push(arguments)
         }, i[r].l = 1 * new Date();
         a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
+            m = s.getElementsByTagName(o)[0];
         a.async = 1;
         a.src = g;
         m.parentNode.insertBefore(a, m)
@@ -692,5 +695,7 @@ Hector.
     ga('create', 'UA-50504399-1', 'hector-ordonez.com');
     ga('send', 'pageview');
 </script>
+
+@endif
 </body>
 </html>

@@ -365,12 +365,12 @@ header#mainHeader .wrapper h1{
     cursor: pointer;
 }
 
-#articleTheWorks #projectContainer #sample1 {background-image: url('./../images/theWorks_project1.png');}
-#articleTheWorks #projectContainer #sample2 {background-image: url('./../images/theWorks_project2.png');}
-#articleTheWorks #projectContainer #sample3 {background-image: url('./../images/theWorks_project3.png');}
-#articleTheWorks #projectContainer #sample4 {background-image: url('./../images/theWorks_project4.png');}
-#articleTheWorks #projectContainer #sample5 {background-image: url('./../images/theWorks_project5.png');}
-#articleTheWorks #projectContainer #sample6 {background-image: url('./../images/theWorks_project6.png');}
+#articleTheWorks #projectContainer #sample1 {background-image: url('../images/theWorks_project1.png');}
+#articleTheWorks #projectContainer #sample2 {background-image: url('../images/theWorks_project2.png');}
+#articleTheWorks #projectContainer #sample3 {background-image: url('../images/theWorks_project3.png');}
+#articleTheWorks #projectContainer #sample4 {background-image: url('../images/theWorks_project4.png');}
+#articleTheWorks #projectContainer #sample5 {background-image: url('../images/theWorks_project5.png');}
+#articleTheWorks #projectContainer #sample6 {background-image: url('../images/theWorks_project6.png');}
 
 /******************************************************************************************/
 /** THE DIFFERENCE                                                                       **/
@@ -437,9 +437,9 @@ article#articleTheDifference .ftype_subSectionContent {
     margin: 1em 1em 1em 0;
 }
 
-#mainFooter .icon.phone{ background-image: url('./../images/contact_phone.png'); }
-#mainFooter .icon.mail { background-image: url('./../images/contact_mail.png'); }
-#mainFooter .icon.download { background-image: url('./../images/contact_download.png'); }
+#mainFooter .icon.phone{ background-image: url('../images/contact_phone.png'); }
+#mainFooter .icon.mail { background-image: url('../images/contact_mail.png'); }
+#mainFooter .icon.download { background-image: url('../images/contact_download.png'); }
 
 #mainFooter #formWrapper .input {
     display: block;
