@@ -515,9 +515,9 @@ article#articleTheDifference .ftype_subSectionContent {
     content: "";
     width: 75%;
     height: 1px;
-    margin-top: -1px;
+    margin: -1px auto 0 auto;
     display: block;
-    position: absolute;
+    position: relative;
     z-index: -1;
     box-shadow: 0 0 25px 1px #000000;
 }
