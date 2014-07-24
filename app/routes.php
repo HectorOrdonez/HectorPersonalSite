@@ -27,9 +27,11 @@ Route::group(['domain' => getenv('SITE_URL')], function() {
     /**
      * @todo Route to online-cv controller.
      */
-    Route::get('/', function() {
-        return View::make('online-cv.index');
-    });
+    Route::get('/', [
+        'uses' => 'Src\OnlineCV\indexController@showWelcome'
+    ]);
+
+    //function() {return View::make('online-cv.index');}
 });
 
 // Nothing matches? go here!
