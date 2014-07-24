@@ -20,6 +20,8 @@ Hector.
     <meta name='description' content='Hector Labs'>
 
     <!-- CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/labs/css/foundation.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/labs/css/normalize.css"/>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ Config::get('app.url') }}/online-cv/images/me.png" type="image/icon">
@@ -29,5 +31,8 @@ Hector.
 
 <h1>Hector Labs</h1>
 
+<!-- JS Libraries -->
+<script type="text/javascript" src="{{ Config::get('app.url') }}/labs/js/vendor/jquery.js"></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/labs/js/foundation/foundation.js"></script>
 </body>
 </html>
