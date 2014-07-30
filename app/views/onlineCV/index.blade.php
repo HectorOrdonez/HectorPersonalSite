@@ -405,6 +405,9 @@ Hector.
 <div class='section' id='webNavPanel'>
     <ul>
         <li>
+            <a title='my labs' class='ftype_navLink' href="{{ Config::get('app.url') }}/labs">my labs</a>
+        </li>
+        <li>
             <a title='what I know' class='ftype_navLink' href='#articleTheSkills'>what I know</a>
         </li>
         <li>
