@@ -55,7 +55,7 @@ Hector.
 
         <ul>
             <li>
-                <a title='my labs' class='ftype_navLink' href='{{ Config::get('app.url') }}/labs'>my labs</a>
+                <a title='my labs' class='ftype_navLink' href="{{ Config::get('app.url') }}/labs">my labs</a>
             </li>
             <li>
                 <a title='what I know' class='ftype_navLink' href='#articleTheSkills'>what I know</a>
@@ -315,7 +315,7 @@ Hector.
                     </div>
                     <div class='ftype_subSectionContent'>
                         <p>
-                            I love my job. From the birth of an idea to the proud moment in which one contemplates the job well done.
+                            I do love my job!
                         </p>
                     </div>
                 </div>
@@ -331,8 +331,7 @@ Hector.
                     </div>
                     <div class='ftype_subSectionContent'>
                         <p>
-                            Does it sound hard? Challenges are a plus for me! A motivating, thrilling problem will more likely teach me something than an easy job that I could do
-                            with my eyes closed.
+                            Easy is boring!
                         </p>
                     </div>
                 </div>
@@ -348,7 +347,7 @@ Hector.
                     </div>
                     <div class='ftype_subSectionContent'>
                         <p>
-                            Taking action and making things happen instead of waiting for the problems to lead us is the new cool.
+                            Rather than reactive!
                         </p>
                     </div>
                 </div>
@@ -368,7 +367,7 @@ Hector.
         <div class='content spacer'>
             <div class="block block4">
                 <div>
-                    <p class='ftype_sectionContentDark'><span class='icon phone'></span> (+34) 622 372 205</p>
+                    <p class='ftype_sectionContentDark'><span class='icon phone'></span> (+31) 628 500 707</p>
 
                     <p class='ftype_sectionContentDark'><span class='icon mail'></span> hjavierog@gmail.com</p>
 
@@ -446,13 +445,15 @@ Hector.
                 <h3 class='problem ftype_traitTitle'>The problem</h3>
 
                 <p class='ftype_traitContent'>
-                    Servers using currency values updating them asynchronously. This was causing differences in the reports.
+                    Servers using currency values updating them asynchronously. This was causing differences in the
+                    reports.
                 </p>
 
                 <h3 class='solution ftype_traitTitle'>The solution</h3>
 
                 <p class='ftype_traitContent'>
-                    Designed, documented and developed system in which the Central Server was the only one updating the currency values and, once the values were updated, they were
+                    Designed, documented and developed system in which the Central Server was the only one updating the
+                    currency values and, once the values were updated, they were
                     broadcasted to the other servers.
                 </p>
             </div>
@@ -492,11 +493,13 @@ Hector.
                 <h3 class='problem ftype_traitTitle'>The solution</h3>
 
                 <p class='ftype_traitContent'>
-                    Developed a simulation tool that goes through all possibilities recording bets, payouts, bonuses and features.
+                    Developed a simulation tool that goes through all possibilities recording bets, payouts, bonuses and
+                    features.
                 </p>
 
                 <p class='ftype_traitContent'>
-                    With more than 312M possibilities in a Slot Game, I used PHP with Bash in order to build a multi-thread simulation system, reducing the simulation time cost to
+                    With more than 312M possibilities in a Slot Game, I used PHP with Bash in order to build a
+                    multi-thread simulation system, reducing the simulation time cost to
                     a 1/8.
                 </p>
             </div>
@@ -530,7 +533,8 @@ Hector.
                 <h3 class='problem ftype_traitTitle'>The problem</h3>
 
                 <p class='ftype_traitContent'>
-                    New feature for website: a Google Map displaying buildings marks following search filters indicated by Users.
+                    New feature for website: a Google Map displaying buildings marks following search filters indicated
+                    by Users.
                 </p>
 
                 <h3 class='solution ftype_traitTitle'>The solution</h3>
@@ -540,7 +544,8 @@ Hector.
                 </p>
 
                 <p class='ftype_traitContent'>
-                    Added feature in search page: now it displays Google Maps with all building marks matching User search.
+                    Added feature in search page: now it displays Google Maps with all building marks matching User
+                    search.
                 </p>
             </div>
 
@@ -579,7 +584,8 @@ Hector.
                 <h3 class='solution ftype_traitTitle'>The solution</h3>
 
                 <p class='ftype_traitContent'>
-                    In collaboration with a graphic designer, we started <a title='The MindCraft Project' href='http://themindcraftproject.org'>The MindCraft Project.</a>
+                    In collaboration with a graphic designer, we started
+                    <a title='The MindCraft Project' href='http://themindcraftproject.org'>The MindCraft Project.</a>
                 </p>
             </div>
 
@@ -612,13 +618,15 @@ Hector.
                 <h3 class='problem ftype_traitTitle'>The problem</h3>
 
                 <p class='ftype_traitContent'>
-                    I felt I lacked the knowledge about how PHP Frameworks work: how they are built, what issues need to face, etc.
+                    I felt I lacked the knowledge about how PHP Frameworks work: how they are built, what issues need to
+                    face, etc.
                 </p>
 
                 <h3 class='solution ftype_traitTitle'>The solution</h3>
 
                 <p class='ftype_traitContent'>
-                    Built a PHP Framework from scratch, implementing a number of features and continuing its development while using the framework for other projects.
+                    Built a PHP Framework from scratch, implementing a number of features and continuing its development
+                    while using the framework for other projects.
                 </p>
             </div>
 
@@ -657,12 +665,14 @@ Hector.
                 <h3 class='solution ftype_traitTitle'>The solution</h3>
 
                 <p class='ftype_traitContent'>
-                    Implemented import tools for JSON, XML and CSV Files: User Interface, Client and Server side validations and SQL constructions for adding the data in the
+                    Implemented import tools for JSON, XML and CSV Files: User Interface, Client and Server side
+                    validations and SQL constructions for adding the data in the
                     database.
                 </p>
 
                 <p class='ftype_traitContent'>
-                    Implemented export tools to Excel and PDF formats. These exports included reports and therefore complex queries, which had to be cached.
+                    Implemented export tools to Excel and PDF formats. These exports included reports and therefore
+                    complex queries, which had to be cached.
                 </p>
             </div>
 
@@ -678,7 +688,7 @@ Hector.
 <!-- JS Libraries -->
 <script type="text/javascript" src="{{ Config::get('app.url') }}/js/external/jquery.js"></script>
 <script type="text/javascript" src="{{ Config::get('app.url') }}/js/awesomeHectorWebsite.js"></script>
-<script type="text/javascript" src="{{ Config::get('app.url') }}/js/external/letterFx.js" ></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/js/external/letterFx.js"></script>
 
 @if (getenv('APP_ENV') == 'production')
 

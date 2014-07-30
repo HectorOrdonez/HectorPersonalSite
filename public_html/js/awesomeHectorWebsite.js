@@ -174,7 +174,7 @@ function awesomeHectorWebsite() {
 
             $('.hiddenIfUnscrolled').each(function () {
                 var imagePos = jQuery(this).offset().top;
-                if (imagePos < topOfWindow + 400) {
+                if (imagePos < topOfWindow + 700) {
                     jQuery(this).addClass("scrolledElement");
                 }
             });
