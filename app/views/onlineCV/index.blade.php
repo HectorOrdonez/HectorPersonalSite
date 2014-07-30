@@ -27,21 +27,21 @@ Hector.
           content='My name is Hector and I am a Web Developer, expert in PHP, SQL, JS and CSS. In this site I hope to illustrate my skills and features while making you have a nice experience with the visuals and design.'>
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/online-cv/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/online-cv/css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/online-cv/css/mediaQueries.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/online-cv/css/external/letterFx.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/css/mediaQueries.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/css/external/letterFx.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic|Raleway:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ Config::get('app.url') }}/online-cv/images/me.png" type="image/icon">
-    <link rel="icon" href="{{ Config::get('app.url') }}/online-cv/images/me.png" type="image/icon">
+    <link rel="shortcut icon" href="{{ Config::get('app.url') }}/img/me.png" type="image/icon">
+    <link rel="icon" href="{{ Config::get('app.url') }}/img/me.png" type="image/icon">
 </head>
 <body>
 
-<!-- 
+<!--
     The navigation panel.
-    In the navigation panel are the "title" of the site at left and a button at right for phones and iPads and links to site's sections for bigger screens  
+    In the navigation panel are the "title" of the site at left and a button at right for phones and iPads and links to site's sections for bigger screens
 -->
 <nav id='nav'>
     <div class='wrapper'>
@@ -55,7 +55,7 @@ Hector.
 
         <ul>
             <li>
-                <a title='my labs' class='ftype_navLink' href='http://{{ getenv('LABS_URL') }}'>my labs</a>
+                <a title='my labs' class='ftype_navLink' href='{{ Config::get('app.url') }}/labs'>my labs</a>
             </li>
             <li>
                 <a title='what I know' class='ftype_navLink' href='#articleTheSkills'>what I know</a>
@@ -102,7 +102,7 @@ Hector.
 
 <!--
     The articles
-    Here the page content. 
+    Here the page content.
 -->
 
 <article class='section' id='articleTheSkills'>
@@ -371,9 +371,9 @@ Hector.
                     <p class='ftype_sectionContentDark'><span class='icon phone'></span> (+34) 622 372 205</p>
 
                     <p class='ftype_sectionContentDark'><span class='icon mail'></span> hjavierog@gmail.com</p>
-                    
+
                     <p>
-                        <a class='ftype_sectionContentDark' title='Download my resume' href="{{ Config::get('app.url') }}/online-cv/downloads/HectorOrdonez-ENG.pdf">
+                        <a class='ftype_sectionContentDark' title='Download my resume' href="{{ Config::get('app.url') }}/docs/HectorOrdonez-ENG.pdf">
                             <span class='icon download'></span>download my resume
                         </a>
                     </p>
@@ -676,9 +676,9 @@ Hector.
 </div>
 
 <!-- JS Libraries -->
-<script type="text/javascript" src="{{ Config::get('app.url') }}/online-cv/js/external/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="{{ Config::get('app.url') }}/online-cv/js/awesomeHectorWebsite.js"></script>
-<script type="text/javascript" src="{{ Config::get('app.url') }}/online-cv/js/external/letterFx.js" ></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/js/external/jquery.js"></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/js/awesomeHectorWebsite.js"></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/js/external/letterFx.js" ></script>
 
 @if (getenv('APP_ENV') == 'production')
 

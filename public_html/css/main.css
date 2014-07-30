@@ -68,7 +68,7 @@ body:before {
 /** Header **/
 #mainHeader {
     height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
-    background: url('../images/header_background.jpg') fixed;
+    background: url('../img/header_background.jpg') fixed;
     background-size: cover;
     text-align: center;
 }
@@ -92,7 +92,7 @@ body:before {
 
 /** The Difference **/
 #articleTheDifference {
-    background: url('../images/theDifference_background.jpg') fixed;
+    background: url('../img/theDifference_background.jpg') fixed;
 }
 
 /** Contact me! **/
@@ -228,7 +228,7 @@ header#mainHeader .wrapper h1{
     margin: 2em;
     padding-bottom: 20%;
     vertical-align: middle;
-    background-image: url('../images/theSkills_hexagon.png');
+    background-image: url('../img/theSkills_hexagon.png');
     background-size: 100%;
 }
 
@@ -247,11 +247,11 @@ header#mainHeader .wrapper h1{
 /******************************************************************************************/
 
 #articleThePerson1 { 
-    background-image: url('../images/thePerson_background1.jpg');
+    background-image: url('../img/thePerson_background1.jpg');
     color: #222;
 }
 #articleThePerson2 {
-    background-image: url('../images/thePerson_background2.jpg');
+    background-image: url('../img/thePerson_background2.jpg');
     color: #fff;
 }
 
@@ -317,27 +317,27 @@ header#mainHeader .wrapper h1{
 }
     
 .articleThePerson .image#personalTraitMusician {
-    background-image: url('../images/thePerson_musician.png');
+    background-image: url('../img/thePerson_musician.png');
 }
 
 .articleThePerson .image#personalTraitTraveller {
-    background-image: url('../images/thePerson_traveller.png');
+    background-image: url('../img/thePerson_traveller.png');
 }
 
 .articleThePerson .image#personalTraitBalanceLife {
-    background-image: url('../images/thePerson_balanceLife.png');
+    background-image: url('../img/thePerson_balanceLife.png');
 }
 
 .articleThePerson .image#personalTraitAttentionToDetails {
-    background-image: url('../images/thePerson_attentionToDetails.png');
+    background-image: url('../img/thePerson_attentionToDetails.png');
 }
 
 .articleThePerson .image#personalTraitPuzzleSolver {
-    background-image: url('../images/thePerson_puzzleSolver.png');
+    background-image: url('../img/thePerson_puzzleSolver.png');
 }
 
 .articleThePerson .image#personalTraitGoalFocused {
-    background-image: url('../images/thePerson_goalFocused.png');
+    background-image: url('../img/thePerson_goalFocused.png');
 }
 
 
@@ -365,12 +365,12 @@ header#mainHeader .wrapper h1{
     cursor: pointer;
 }
 
-#articleTheWorks #projectContainer #sample1 {background-image: url('../images/theWorks_project1.png');}
-#articleTheWorks #projectContainer #sample2 {background-image: url('../images/theWorks_project2.png');}
-#articleTheWorks #projectContainer #sample3 {background-image: url('../images/theWorks_project3.png');}
-#articleTheWorks #projectContainer #sample4 {background-image: url('../images/theWorks_project4.png');}
-#articleTheWorks #projectContainer #sample5 {background-image: url('../images/theWorks_project5.png');}
-#articleTheWorks #projectContainer #sample6 {background-image: url('../images/theWorks_project6.png');}
+#articleTheWorks #projectContainer #sample1 {background-image: url('../img/theWorks_project1.png');}
+#articleTheWorks #projectContainer #sample2 {background-image: url('../img/theWorks_project2.png');}
+#articleTheWorks #projectContainer #sample3 {background-image: url('../img/theWorks_project3.png');}
+#articleTheWorks #projectContainer #sample4 {background-image: url('../img/theWorks_project4.png');}
+#articleTheWorks #projectContainer #sample5 {background-image: url('../img/theWorks_project5.png');}
+#articleTheWorks #projectContainer #sample6 {background-image: url('../img/theWorks_project6.png');}
 
 /******************************************************************************************/
 /** THE DIFFERENCE                                                                       **/
@@ -405,9 +405,9 @@ article#articleTheDifference .image {
     background-position: center;
 } 
 
-article#articleTheDifference #theDifference_enthusiast .image { background-image: url('../images/theDifference_enthusiast.png'); }
-article#articleTheDifference #theDifference_adventurer .image { background-image: url('../images/theDifference_adventurer.png'); }
-article#articleTheDifference #theDifference_proactive .image { background-image: url('../images/theDifference_proactive.png'); }
+article#articleTheDifference #theDifference_enthusiast .image { background-image: url('../img/theDifference_enthusiast.png'); }
+article#articleTheDifference #theDifference_adventurer .image { background-image: url('../img/theDifference_adventurer.png'); }
+article#articleTheDifference #theDifference_proactive .image { background-image: url('../img/theDifference_proactive.png'); }
 
 article#articleTheDifference .ftype_subSectionContent {
     padding: 0 1em;
@@ -437,9 +437,9 @@ article#articleTheDifference .ftype_subSectionContent {
     margin: 1em 1em 1em 0;
 }
 
-#mainFooter .icon.phone{ background-image: url('../images/contact_phone.png'); }
-#mainFooter .icon.mail { background-image: url('../images/contact_mail.png'); }
-#mainFooter .icon.download { background-image: url('../images/contact_download.png'); }
+#mainFooter .icon.phone{ background-image: url('../img/contact_phone.png'); }
+#mainFooter .icon.mail { background-image: url('../img/contact_mail.png'); }
+#mainFooter .icon.download { background-image: url('../img/contact_download.png'); }
 
 #mainFooter #formWrapper .input {
     display: block;

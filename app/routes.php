@@ -12,20 +12,16 @@
 
 */
 
-Route::group(['domain' => getenv('LABS_URL')], function() {
-    Route::get('/', [
-        'uses' => 'Src\Labs\indexController@showWelcome'
-    ]);
-});
+Route::get('/labs', [
+    'uses' => 'Src\Labs\indexController@showWelcome'
+]);
 
-Route::group(['domain' => getenv('SITE_URL')], function() {
-    Route::get('/', [
-        'uses' => 'Src\OnlineCV\indexController@showWelcome'
-    ]);
-});
+Route::get('/', [
+    'uses' => 'Src\OnlineCV\indexController@showWelcome'
+]);
 
 // Nothing matches? go here!
-Route::get('/', function()
+Route::any('{all}', function()
 {
-    return View::make('online-cv.index');
+    return 'You should not have done that. Now a kitty has died.';
 });

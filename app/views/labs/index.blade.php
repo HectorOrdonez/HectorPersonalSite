@@ -20,12 +20,12 @@ Hector.
     <meta name='description' content='Hector Labs'>
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/labs/css/foundation.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/labs/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/css/external/foundation.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config::get('app.url') }}/css/external/normalize.css"/>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ Config::get('app.url') }}/online-cv/images/me.png" type="image/icon">
-    <link rel="icon" href="{{ Config::get('app.url') }}/online-cv/images/me.png" type="image/icon">
+    <link rel="shortcut icon" href="{{ Config::get('app.url') }}/img/me.png" type="image/icon">
+    <link rel="icon" href="{{ Config::get('app.url') }}/img/me.png" type="image/icon">
 
     <!-- Pre rendering scripts -->
     <script src="js/vendor/modernizr.js"></script>
@@ -34,7 +34,7 @@ Hector.
 
 <nav class="top-bar">
     <ul class="title-area">
-        <li class="name"><h1><a href='http://{{ getenv('SITE_URL') }}'>Hector Labs</a></h1></li>
+        <li class="name"><h1><a href='{{ Config::get('app.url') }}'>Hector Labs</a></h1></li>
     </ul>
 
     <section class="top-bar-section">
@@ -64,7 +64,7 @@ Hector.
     </div>
     <div class="large-4 columns">
 
-        <img src="{{ Config::get('app.url') }}/labs/img/BigWrongMan.png" alt="A Wrong Man">
+        <img src="{{ Config::get('app.url') }}/img/BigWrongMan.png" alt="A Wrong Man">
 
     </div>
 </div>
@@ -91,7 +91,7 @@ Hector.
             Sample:
         </div>
         <div>
-            <img src="{{ Config::get('app.url') }}/labs/img/sample.jpg" alt="sample">
+            <img src="{{ Config::get('app.url') }}/img/sample.jpg" alt="sample">
         </div>
     </div>
     <div class="large-2 columns"><hr></div>
@@ -106,17 +106,17 @@ Hector.
         </h3>
         <ul class="large-block-grid-4">
 
-            <li><img src="{{ Config::get('app.url') }}/labs/img/BigWrongMan.png" alt="A Wrong Man"></li>
-            <li><img src="{{ Config::get('app.url') }}/labs/img/BigWrongMan.png" alt="A Wrong Man"></li>
-            <li><img src="{{ Config::get('app.url') }}/labs/img/BigWrongMan.png" alt="A Wrong Man"></li>
-            <li><img src="{{ Config::get('app.url') }}/labs/img/BigWrongMan.png" alt="A Wrong Man"></li>
+            <li><img src="{{ Config::get('app.url') }}/img/BigWrongMan.png" alt="A Wrong Man"></li>
+            <li><img src="{{ Config::get('app.url') }}/img/BigWrongMan.png" alt="A Wrong Man"></li>
+            <li><img src="{{ Config::get('app.url') }}/img/BigWrongMan.png" alt="A Wrong Man"></li>
+            <li><img src="{{ Config::get('app.url') }}/img/BigWrongMan.png" alt="A Wrong Man"></li>
         </ul>
     </div>
 </div>
 
 <!-- JS Libraries -->
-<script type="text/javascript" src="{{ Config::get('app.url') }}/labs/js/vendor/jquery.js"></script>
-<script type="text/javascript" src="{{ Config::get('app.url') }}/labs/js/foundation/foundation.js"></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/js/external/jquery.js"></script>
+<script type="text/javascript" src="{{ Config::get('app.url') }}/js/external/foundation/foundation.js"></script>
 <script>
     $(document).foundation();
 </script>
