@@ -16,6 +16,10 @@ Route::get('/labs', [
     'uses' => 'Src\Labs\indexController@showWelcome'
 ]);
 
+Route::get('/labs/game01', [
+    'uses' => 'Src\Labs\indexController@showGame01'
+]);
+
 Route::get('/', [
     'uses' => 'Src\OnlineCV\indexController@showWelcome'
 ]);
