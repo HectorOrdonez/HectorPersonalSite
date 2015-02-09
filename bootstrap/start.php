@@ -10,8 +10,8 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
-
 $app = new Illuminate\Foundation\Application;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,10 +24,9 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-    'local' => ['*.dev', gethostname()],
-    'production' => ['*.com']
-));
+$env = $app->detectEnvironment([
+    'local' => ['HectorMac.local']
+]);
 
 /*
 |--------------------------------------------------------------------------
