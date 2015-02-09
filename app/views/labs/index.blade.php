@@ -40,6 +40,7 @@ Hector.
     <section class="top-bar-section">
         <ul class="right">
             <li><a href="#section_about">About</a></li>
+            <li><a href="#section_mindcraft">The MindCraft Project</a></li>
             <li><a href="#section_who">Who is wrong</a></li>
             <li><a href="#section_related">People you might know</a></li>
         </ul>
@@ -65,6 +66,29 @@ Hector.
     <div class="large-4 columns">
 
         <img src="{{ Config::get('app.url') }}/img/BigWrongMan.png" alt="A Wrong Man">
+
+    </div>
+
+    <hr>
+
+    <div class="large-4 columns">
+
+        <img src="{{ Config::get('app.url') }}/img/labs/mindcraft.png" alt="The MindCraft Project">
+
+    </div>
+    <div class="large-8 columns">
+
+        <div class="panel">
+            <h2 id="section_mindcraft">
+                <a href="http://themindcraftproject.org">
+                    The MindCraft Project
+                </a>
+            </h2>
+
+            <p>
+                A project of mine.
+            </p>
+        </div>
 
     </div>
 </div>
