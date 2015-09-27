@@ -28,7 +28,11 @@
         padding-top: 0;
         padding-bottom: 0;
     }
-    
+
+    .articleThePerson .traits {
+        margin: 0;
+    }
+
     .section .wrapper {
         margin-left: 1em;
         margin-right: 1em;
@@ -71,6 +75,10 @@
 
 /** iPads and smart phones in landscape layouts **/
 @media screen and (min-width: 480px) and (max-width: 720px) {
+
+    .articleThePerson .traits {
+        margin: 0;
+    }
 
     .articleThePerson .wrapper {
         padding-top: 0;
