@@ -14,6 +14,8 @@ Hector.
 
 30/04/2014
 
+Updated 20/11/2015
+
 -->
 
 <html>
@@ -55,9 +57,6 @@ Hector.
 
         <ul>
             <li>
-                <a title='my labs' class='ftype_navLink' href="{{ Config::get('app.url') }}/labs">my labs</a>
-            </li>
-            <li>
                 <a title='what I know' class='ftype_navLink' href='#articleTheSkills'>what I know</a>
             </li>
             <li>
@@ -78,7 +77,7 @@ Hector.
 
 <!--
     The header.
-    This differs from navigation as no top-located. Header is just the "introduction" to the site, the welcoming visuals.
+    Or how to present myself as awesome as possible right after site opens.
 -->
 <header class='section' id='mainHeader'>
     <div class='wrapper'>
@@ -127,13 +126,13 @@ Hector.
                         Object Oriented and PHP5.5
                     </li>
                     <li>
-                        Kohana, Zend and Custom PHP Frameworks.
+                        Laravel, Kohana and Custom PHP Frameworks.
                     </li>
                     <li>
-                        Design patterns such as Factory or MVC.
+                        Design patterns such as Factory, Decorator or MVC.
                     </li>
                     <li>
-                        Nowadays mastering the art of TDD with PHPUnit.
+                        Tested software is better software.
                     </li>
                 </ul>
             </div>
@@ -173,13 +172,13 @@ Hector.
             <div class='text hiddenIfUnscrolled ftype_sectionContent'>
                 <ul>
                     <li>
-                        CSS3 - Shadows, backgrounds, gradients, etc.
+                        CSS3 - Transforms, backgrounds, gradients, etc.
                     </li>
                     <li>
-                        Cross browsing styles.
+                        Experience with Sass, Scss, Less
                     </li>
                     <li>
-                        Web Responsive design.
+                        Web Responsive design and mobile first
                     </li>
                 </ul>
             </div>
@@ -199,10 +198,10 @@ Hector.
                         Object Oriented.
                     </li>
                     <li>
-                        Built interactive interfaces with Ajax.
+                        Experience with Ajax and Turbolinks
                     </li>
                     <li>
-                        Experience with jQuery.
+                        Experience with jQuery and CoffeeScript
                     </li>
                 </ul>
             </div>
@@ -367,7 +366,7 @@ Hector.
         <div class='content spacer'>
             <div class="block block4">
                 <div>
-                    <p class='ftype_sectionContentDark'><span class='icon phone'></span> (+31) 628 500 707</p>
+                    <p class='ftype_sectionContentDark'><span class='icon phone'></span> (+31) 638 617 308</p>
 
                     <p class='ftype_sectionContentDark'><span class='icon mail'></span> hjavierog@gmail.com</p>
 
@@ -428,265 +427,12 @@ Hector.
 <!-- Project overlays -->
 <!-- @todo Use only one window, and change its content with JS. -->
 
-<div class="projectWindow" id="projectWindow_sample1">
-    <div class='overlay'></div>
-    <div class='innerWindowWrapper'>
-        <div class='innerWindow'>
-            <header>
-                <h2 class='ftype_sectionTitle'>
-                    The exchange rates project
-                </h2>
-            </header>
-
-            <div class='content'>
-                <h3 class='tech ftype_traitTitle'>Tech used</h3>
-
-                <p class='ftype_traitContent'>
-                    Object oriented PHP, Cron Jobs, UML diagrams, MVC Kohana Framework.
-                </p>
-
-                <h3 class='problem ftype_traitTitle'>The problem</h3>
-
-                <p class='ftype_traitContent'>
-                    Servers using currency values updating them asynchronously. This was causing differences in the
-                    reports.
-                </p>
-
-                <h3 class='solution ftype_traitTitle'>The solution</h3>
-
-                <p class='ftype_traitContent'>
-                    Designed, documented and developed system in which the Central Server was the only one updating the
-                    currency values and, once the values were updated, they were
-                    broadcasted to the other servers.
-                </p>
-            </div>
-
-            <div class='closeWrapper'>
-                <div class='close'>
-                    &#10006;
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="projectWindow" id="projectWindow_sample2">
-    <div class='overlay'></div>
-    <div class='innerWindowWrapper'>
-        <div class='innerWindow'>
-            <header>
-                <h2 class='ftype_sectionTitle'>
-                    All possibilities simulation tool
-                </h2>
-            </header>
-
-            <div class='content'>
-                <h3 class='tech ftype_traitTitle'>Tech used</h3>
-
-                <p class='ftype_traitContent'>
-                    Bash, Object oriented PHP, Mocking objets, MVC Kohana Framework.
-                </p>
-
-                <h3 class='problem ftype_traitTitle'>The problem</h3>
-
-                <p class='ftype_traitContent'>
-                    Lack of tool with which calculate maximum payouts or exact averages.
-                </p>
-
-                <h3 class='problem ftype_traitTitle'>The solution</h3>
-
-                <p class='ftype_traitContent'>
-                    Developed a simulation tool that goes through all possibilities recording bets, payouts, bonuses and
-                    features.
-                </p>
-
-                <p class='ftype_traitContent'>
-                    With more than 312M possibilities in a Slot Game, I used PHP with Bash in order to build a
-                    multi-thread simulation system, reducing the simulation time cost to
-                    a 1/8.
-                </p>
-            </div>
-
-            <div class='closeWrapper'>
-                <div class='close'>
-                    &#10006;
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="projectWindow" id="projectWindow_sample3">
-    <div class='overlay'></div>
-    <div class='innerWindowWrapper'>
-        <div class='innerWindow'>
-            <header>
-                <h2 class='ftype_sectionTitle'>
-                    The building location register project
-                </h2>
-            </header>
-
-            <div class='content'>
-                <h3 class='tech ftype_traitTitle'>Tech used</h3>
-
-                <p class='ftype_traitContent'>
-                    PHP5, SQL, jQuery, Ajax, Google Maps Api.
-                </p>
-
-                <h3 class='problem ftype_traitTitle'>The problem</h3>
-
-                <p class='ftype_traitContent'>
-                    New feature for website: a Google Map displaying buildings marks following search filters indicated
-                    by Users.
-                </p>
-
-                <h3 class='solution ftype_traitTitle'>The solution</h3>
-
-                <p class='ftype_traitContent'>
-                    Added feature for the building editor: Users now can indicate building location in Google Maps.
-                </p>
-
-                <p class='ftype_traitContent'>
-                    Added feature in search page: now it displays Google Maps with all building marks matching User
-                    search.
-                </p>
-            </div>
-
-            <div class='closeWrapper'>
-                <div class='close'>
-                    &#10006;
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="projectWindow" id="projectWindow_sample4">
-    <div class='overlay'></div>
-    <div class='innerWindowWrapper'>
-        <div class='innerWindow'>
-            <header>
-                <h2 class='ftype_sectionTitle'>
-                    The MindCraft Project
-                </h2>
-            </header>
-
-            <div class='content'>
-                <h3 class='tech ftype_traitTitle'>Tech used</h3>
-
-                <p class='ftype_traitContent'>
-                    Front-end and Back-end development, Cron Jobs, Custom PHP Framework.
-                </p>
-
-                <h3 class='problem ftype_traitTitle'>The problem</h3>
-
-                <p class='ftype_traitContent'>
-                    I wanted a website for self-tracking and organizing tool that satisfies my needs.
-                </p>
-
-                <h3 class='solution ftype_traitTitle'>The solution</h3>
-
-                <p class='ftype_traitContent'>
-                    In collaboration with a graphic designer, we started
-                    <a title='The MindCraft Project' href='http://themindcraftproject.org'>The MindCraft Project.</a>
-                </p>
-            </div>
-
-            <div class='closeWrapper'>
-                <div class='close'>
-                    &#10006;
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="projectWindow" id="projectWindow_sample5">
-    <div class='overlay'></div>
-    <div class='innerWindowWrapper'>
-        <div class='innerWindow'>
-            <header>
-                <h2 class='ftype_sectionTitle'>
-                    Hecnel Framework
-                </h2>
-            </header>
-
-            <div class='content'>
-                <h3 class='tech ftype_traitTitle'>Tech used</h3>
-
-                <p class='ftype_traitContent'>
-                    Object oriented PHP, MVC Model, Factory pattern, PHP ActiveRecord, Cron Jobs.
-                </p>
-
-                <h3 class='problem ftype_traitTitle'>The problem</h3>
-
-                <p class='ftype_traitContent'>
-                    I felt I lacked the knowledge about how PHP Frameworks work: how they are built, what issues need to
-                    face, etc.
-                </p>
-
-                <h3 class='solution ftype_traitTitle'>The solution</h3>
-
-                <p class='ftype_traitContent'>
-                    Built a PHP Framework from scratch, implementing a number of features and continuing its development
-                    while using the framework for other projects.
-                </p>
-            </div>
-
-            <div class='closeWrapper'>
-                <div class='close'>
-                    &#10006;
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="projectWindow" id="projectWindow_sample6">
-    <div class='overlay'></div>
-    <div class='innerWindowWrapper'>
-        <div class='innerWindow'>
-            <header>
-                <h2 class='ftype_sectionTitle'>
-                    Data Importers and Exporters
-                </h2>
-            </header>
-
-            <div class='content'>
-                <h3 class='tech ftype_traitTitle'>Tech used</h3>
-
-                <p class='ftype_traitContent'>
-                    Object oriented PHP, Kohana Framework, JSON, XML.
-                </p>
-
-                <h3 class='problem ftype_traitTitle'>The problem</h3>
-
-                <p class='ftype_traitContent'>
-                    Importing or exporting data to the database.
-                </p>
-
-                <h3 class='solution ftype_traitTitle'>The solution</h3>
-
-                <p class='ftype_traitContent'>
-                    Implemented import tools for JSON, XML and CSV Files: User Interface, Client and Server side
-                    validations and SQL constructions for adding the data in the
-                    database.
-                </p>
-
-                <p class='ftype_traitContent'>
-                    Implemented export tools to Excel and PDF formats. These exports included reports and therefore
-                    complex queries, which had to be cached.
-                </p>
-            </div>
-
-            <div class='closeWrapper'>
-                <div class='close'>
-                    &#10006;
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@include('onlineCV/partials/project-window-1')
+@include('onlineCV/partials/project-window-2')
+@include('onlineCV/partials/project-window-3')
+@include('onlineCV/partials/project-window-4')
+@include('onlineCV/partials/project-window-5')
+@include('onlineCV/partials/project-window-6')
 
 <!-- JS Libraries -->
 <script type="text/javascript" src="{{ Config::get('app.url') }}/js/external/jquery.js"></script>
