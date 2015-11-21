@@ -384,7 +384,7 @@ Updated 20/11/2015
                     <label class='ftype_sectionContentDark' for='nameInput'>Name</label>
                     <input class='input ftype_input' type="text" name="name" id="nameInput" value=''>
 
-                    <label class='ftype_sectionContentDark' for='mailInput'>eMail</label>
+                    <label class='ftype_sectionContentDark' for='mailInput'>Mail</label>
                     <input class='input ftype_input' type="text" name="mail" id="mailInput" value=''>
 
                     <label class='ftype_sectionContentDark' for='messageInput'>Message</label>
@@ -403,9 +403,6 @@ Updated 20/11/2015
 
 <div class='section' id='webNavPanel'>
     <ul>
-        <li>
-            <a title='my labs' class='ftype_navLink' href="{{ Config::get('app.url') }}/labs">my labs</a>
-        </li>
         <li>
             <a title='what I know' class='ftype_navLink' href='#articleTheSkills'>what I know</a>
         </li>

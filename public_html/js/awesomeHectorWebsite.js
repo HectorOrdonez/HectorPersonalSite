@@ -219,7 +219,7 @@ function awesomeHectorWebsite() {
             // Sending to server
             jQuery.ajax({
                 type: 'post',
-                url: 'sendMail.php',
+                url: 'contact',
                 data: {
                     name: name,
                     mail: mail,

@@ -12,17 +12,9 @@
 
 */
 
-Route::get('/labs', [
-    'uses' => 'Src\Labs\indexController@showWelcome'
-]);
+Route::get('/', 'IndexController@showWelcome');
 
-Route::get('/labs/game01', [
-    'uses' => 'Src\Labs\indexController@showGame01'
-]);
-
-Route::get('/', [
-    'uses' => 'Src\OnlineCV\indexController@showWelcome'
-]);
+Route::post('/contact', 'IndexController@contact');
 
 // Nothing matches? go here!
 Route::any('{all}', function()
